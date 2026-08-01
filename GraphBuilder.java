@@ -5,9 +5,27 @@ public class GraphBuilder {
 
     public Graph buildGraph(List<Location> locations, List<Edge> roads) {
 
-        Graph graph = new Graph();
+    Graph graph = new Graph();
 
-        return graph;
+
+    // Add nodes
+    for(Location location : locations){
+
+        graph.addLocation(location);
+
     }
 
+
+    // Add edges
+    for(Edge road : roads){
+
+        graph.addRoad(road);
+
+    }
+
+
+    return graph;
 }
+
+}
+
