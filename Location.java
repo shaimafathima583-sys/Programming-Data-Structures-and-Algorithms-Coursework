@@ -7,8 +7,10 @@ public class Location {
     double purchasingPower;
     double competition;
     double facilities;
+    double latitude;
+    double longitude;
 
-    public Location(String name, String district,int population,double purchasingPower,double competition,double facilities) {
+    public Location(String name, String district,int population,double purchasingPower,double competition,double facilities,double latitude,double longitude) {
 
         this.name = name;
         this.district = district;
@@ -16,6 +18,8 @@ public class Location {
         this.purchasingPower = purchasingPower;
         this.competition = competition;
         this.facilities = facilities;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
 
@@ -46,4 +50,31 @@ public class Location {
     public double getFacilities() {
         return facilities;
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void displayDetails() {
+
+    System.out.println("Location Details");
+    System.out.println("------------------------");
+
+    System.out.println("Name              : " + name);
+    System.out.println("District          : " + district);
+    System.out.println("Population        : " + population);
+
+    System.out.println("Purchasing Power  : " + purchasingPower);
+    System.out.println("Competition Level : " + competition);
+    System.out.println("Facilities Score  : " + facilities);
+
+    System.out.println("Latitude          : " + latitude);
+    System.out.println("Longitude         : " + longitude);
+
+    System.out.println("------------------------");
+}
 }
