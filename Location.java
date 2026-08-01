@@ -10,7 +10,8 @@ public class Location {
     double latitude;
     double longitude;
 
-    public Location(String name, String district,int population,double purchasingPower,double competition,double facilities,double latitude,double longitude) {
+    public Location(String name, String district, double latitude, double longitude, int population, double purchasingPower, double competition, double facilities) {
+    
 
         this.name = name;
         this.district = district;
@@ -34,6 +35,7 @@ public class Location {
     public String getDistrict() {
         return district;
     }
+    
 
     public int getPopulation() {
         return population;

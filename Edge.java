@@ -10,4 +10,12 @@ public class Edge {
         this.distance = distance;
 
     }
+
+    public Location getDestination() {
+        return destination;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
 }
