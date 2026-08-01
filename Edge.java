@@ -1,21 +1,32 @@
+
 public class Edge {
 
-    Location destination;
+    Province destination;
     double distance;
 
 
-    public Edge(Location destination, double distance){
+    // Constructor
+    public Edge(Province destination, double distance) {
 
         this.destination = destination;
         this.distance = distance;
 
     }
 
-    public Location getDestination() {
+
+    // Getter for destination province
+    public Province getDestination() {
+
         return destination;
+
     }
 
+
+    // Getter for distance
     public double getDistance() {
+
         return distance;
+
     }
+
 }
