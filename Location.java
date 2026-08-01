@@ -22,4 +22,28 @@ public class Location {
     public String toString(){
         return name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public double getPurchasingPower() {
+        return purchasingPower;
+    }
+
+    public double getCompetition() {
+        return competition;
+    }
+
+    public double getFacilities() {
+        return facilities;
+    }
 }
