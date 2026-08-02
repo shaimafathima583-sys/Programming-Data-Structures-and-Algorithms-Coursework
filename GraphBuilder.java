@@ -2,29 +2,13 @@ import java.util.List;
 
 public class GraphBuilder {
 
-
     public Graph buildGraph(List<Location> locations, List<Road> roads) {
 
-    Graph graph = new Graph();
+        Graph graph = new Graph();
 
-    // Add nodes
-    for(Location location : locations){
+        for (Location location : locations) graph.addLocation(location);
+        for (Road road : roads) graph.addRoad(road);
 
-        graph.addLocation(location);
-
+        return graph;
     }
-
-
-    // Add edges
-    for(Road road : roads){
-
-        graph.addRoad(road);
-
-    }
-
-
-    return graph;
 }
-
-}
-
