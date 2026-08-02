@@ -1,5 +1,3 @@
-package osm;
-
 import java.io.*;
 
 public class OSMClient {
@@ -9,7 +7,7 @@ public class OSMClient {
 
     public OSMClient(){
 
-        overpassURL = ;
+        overpassURL = "https://overpass-api.de/api/interpreter";
 
     }
 

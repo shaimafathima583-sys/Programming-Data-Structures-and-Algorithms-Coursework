@@ -4,53 +4,62 @@ public class Graph {
 
     private Map<Location, List<Road>> adjacencyList;
 
-
-    public Graph(){
+    public Graph() {
 
         adjacencyList = new HashMap<>();
 
     }
 
+    public void addLocation(Location location) {
 
-    // Add a location/node
-    public void addLocation(Location location){
+        if (!adjacencyList.containsKey(location)) {
 
-        adjacencyList.put(location, new ArrayList<>());
+            adjacencyList.put(location, new ArrayList<>());
+
+        }
 
     }
 
-
-    // Add a connection/edge
-    public void addRoad(Road road){
+    public void addRoad(Road road) {
 
         Location source = road.getSource();
+        Location destination = road.getDestination();
 
         adjacencyList.get(source).add(road);
 
+        // Optional: make roads two-way
+        Road reverseRoad =
+                new Road(destination, source, road.getDistance());
+
+        adjacencyList.get(destination).add(reverseRoad);
+
     }
 
-
-    // Get neighbouring roads
-    public List<Road> getNeighbours(Location location){
+    public List<Road> getNeighbours(Location location) {
 
         return adjacencyList.get(location);
 
     }
 
+    public void displayGraph() {
 
-    // Display graph (for testing)
-    public void displayGraph(){
+        for (Location location : adjacencyList.keySet()) {
 
-        for(Location location : adjacencyList.keySet()){
+            System.out.println(location + " connects to:");
 
-            System.out.println(location + " --> ");
-
-            for(Road road : adjacencyList.get(location)){
+            for (Road road : adjacencyList.get(location)) {
 
                 System.out.println(
-                    road.getDestination()
+                        " -> " +
+                        road.getDestination() +
+                        " (" +
+                        road.getDistance() +
+                        " km)"
                 );
+
             }
+
+            System.out.println();
 
         }
 
