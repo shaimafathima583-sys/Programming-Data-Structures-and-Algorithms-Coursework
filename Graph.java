@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Graph {
 
-    private Map<Location, List<Edge>> adjacencyList;
+    private Map<Location, List<Road>> adjacencyList;
 
 
     public Graph(){
@@ -12,7 +12,7 @@ public class Graph {
     }
 
 
-    // Add loc node
+    // Add a location/node
     public void addLocation(Location location){
 
         adjacencyList.put(location, new ArrayList<>());
@@ -20,8 +20,8 @@ public class Graph {
     }
 
 
-    // Add edge
-    public void addRoad(Edge road){
+    // Add a connection/edge
+    public void addRoad(Road road){
 
         Location source = road.getSource();
 
@@ -30,8 +30,8 @@ public class Graph {
     }
 
 
-    // Get neighbour roads
-    public List<Edge> getNeighbours(Location location){
+    // Get neighbouring roads
+    public List<Road> getNeighbours(Location location){
 
         return adjacencyList.get(location);
 
@@ -45,10 +45,10 @@ public class Graph {
 
             System.out.println(location + " --> ");
 
-            for(Edge edge : adjacencyList.get(location)){
+            for(Road road : adjacencyList.get(location)){
 
                 System.out.println(
-                    edge.getDestination()
+                    road.getDestination()
                 );
             }
 

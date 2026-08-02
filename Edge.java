@@ -1,18 +1,14 @@
 public class Edge {
 
-    Location source;
     Location destination;
     double distance;
 
 
-    public Edge(Location source, Location destination, double distance) {
-        this.source = source;
+    public Edge(Location destination, double distance){
+
         this.destination = destination;
         this.distance = distance;
-    }
 
-    public Location getSource() {
-        return source;
     }
 
     public Location getDestination() {
