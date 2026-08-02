@@ -1,32 +1,23 @@
+package model;
 
 public class Edge {
 
-    Province destination;
-    double distance;
+    private Location destination;
+    private double distance;
 
-
-    // Constructor
-    public Edge(Province destination, double distance) {
+    public Edge(Location destination, double distance) {
 
         this.destination = destination;
         this.distance = distance;
 
     }
 
-
-    // Getter for destination province
-    public Province getDestination() {
-
+    public Location getDestination() {
         return destination;
-
     }
 
-
-    // Getter for distance
     public double getDistance() {
-
         return distance;
-
     }
 
 }
