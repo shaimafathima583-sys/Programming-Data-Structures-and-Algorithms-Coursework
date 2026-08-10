@@ -9,17 +9,24 @@ public class Province {
     private double facilitiesScore;
     private double competitionLevel;
 
+    private double latitude;
+    private double longitude;
+
     public Province(String name,
                     int population,
                     double purchasingPower,
                     double facilitiesScore,
-                    double competitionLevel) {
+                    double competitionLevel,
+                    double latitude,
+                    double longitude) {
 
         this.name = name;
         this.population = population;
         this.purchasingPower = purchasingPower;
         this.facilitiesScore = facilitiesScore;
         this.competitionLevel = competitionLevel;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getName() {
@@ -42,6 +49,13 @@ public class Province {
         return competitionLevel;
     }
 
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
     @Override
     public String toString() {
         return name;
