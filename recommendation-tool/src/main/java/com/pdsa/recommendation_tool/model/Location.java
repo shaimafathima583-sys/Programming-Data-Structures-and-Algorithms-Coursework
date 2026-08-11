@@ -8,32 +8,46 @@ public class Location {
 
     private int population;
     private double purchasingPower;
-    private double competitionLevel;
-    private double facilitiesScore;
+    private double competition;
+    private double facilities;
+
+    private double roadAccess;
+    private double customerDensity;
+
+    private int numBusinesses;
+    private double avgIncome;
 
     private double latitude;
     private double longitude;
 
-    private double roadAccessibility;
-    private double customerDensity;
-
-    public Location(String name, String district, String province,
-                    int population, double purchasingPower,
-                    double competitionLevel, double facilitiesScore,
-                    double latitude, double longitude,
-                    double roadAccessibility, double customerDensity) {
+    public Location(
+            String name,
+            String district,
+            String province,
+            int population,
+            double purchasingPower,
+            double competition,
+            double facilities,
+            double roadAccess,
+            double customerDensity,
+            int numBusinesses,
+            double avgIncome,
+            double latitude,
+            double longitude) {
 
         this.name = name;
         this.district = district;
         this.province = province;
         this.population = population;
         this.purchasingPower = purchasingPower;
-        this.competitionLevel = competitionLevel;
-        this.facilitiesScore = facilitiesScore;
+        this.competition = competition;
+        this.facilities = facilities;
+        this.roadAccess = roadAccess;
+        this.customerDensity = customerDensity;
+        this.numBusinesses = numBusinesses;
+        this.avgIncome = avgIncome;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.roadAccessibility = roadAccessibility;
-        this.customerDensity = customerDensity;
     }
 
     public String getName() {
@@ -56,12 +70,28 @@ public class Location {
         return purchasingPower;
     }
 
-    public double getCompetitionLevel() {
-        return competitionLevel;
+    public double getCompetition() {
+        return competition;
     }
 
-    public double getFacilitiesScore() {
-        return facilitiesScore;
+    public double getFacilities() {
+        return facilities;
+    }
+
+    public double getRoadAccess() {
+        return roadAccess;
+    }
+
+    public double getCustomerDensity() {
+        return customerDensity;
+    }
+
+    public int getNumBusinesses() {
+        return numBusinesses;
+    }
+
+    public double getAvgIncome() {
+        return avgIncome;
     }
 
     public double getLatitude() {
@@ -72,39 +102,8 @@ public class Location {
         return longitude;
     }
 
-    public double getRoadAccessibility() {
-        return roadAccessibility;
-    }
-
-    public double getCustomerDensity() {
-        return customerDensity;
-    }
-
-    public void setFacilitiesScore(double facilitiesScore) {
-        this.facilitiesScore = facilitiesScore;
-    }
-
     @Override
     public String toString() {
-        return name;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-
-        if (!(o instanceof Location)) {
-            return false;
-        }
-
-        Location location = (Location) o;
-        return name.equals(location.name);
-    }
-
-    @Override
-    public int hashCode() {
-        return name.hashCode();
+        return name + " (" + district + ", " + province + ")";
     }
 }

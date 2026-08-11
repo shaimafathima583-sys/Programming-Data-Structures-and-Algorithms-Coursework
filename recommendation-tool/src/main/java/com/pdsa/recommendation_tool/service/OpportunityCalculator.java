@@ -19,10 +19,10 @@ public class OpportunityCalculator {
                 location.getPurchasingPower();
 
         double facilitiesScore =
-                location.getFacilitiesScore();
+                location.getFacilities();
 
         double competitionScore =
-                location.getCompetitionLevel();
+                location.getCompetition();
 
         double score =
                 (populationScore * 0.30)
