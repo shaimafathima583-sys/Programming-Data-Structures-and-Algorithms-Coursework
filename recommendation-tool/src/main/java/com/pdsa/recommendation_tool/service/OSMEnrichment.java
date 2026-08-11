@@ -1,8 +1,12 @@
 package com.pdsa.recommendation_tool.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.pdsa.recommendation_tool.model.Location;
 import com.pdsa.recommendation_tool.osm.OSMCache;
 import com.pdsa.recommendation_tool.osm.OSMClient;
+import com.pdsa.recommendation_tool.osm.OSMParser;
 
 public class OSMEnrichment {
 
@@ -65,4 +69,14 @@ public class OSMEnrichment {
 
         return json;
     }
+    public List<OSMParser.OSMPlace> getPlaces(Location location) {
+
+    String json = getOSMData(location);
+
+    if (json == null) {
+        return new ArrayList<>();
+    }
+
+    return new OSMParser().parse(json);
+}
 }
