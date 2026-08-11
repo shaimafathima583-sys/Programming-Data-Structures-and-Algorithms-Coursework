@@ -1,84 +1,74 @@
 package com.pdsa.recommendation_tool.graph;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.pdsa.recommendation_tool.model.Road;
 
-/**
- * Minimal Graph implementation expected by Dijkstra.
- */
-public class Graph {
+import java.util.*;
+import java.util.function.BiPredicate;
+import java.util.function.Predicate;
 
-	private final Map<Location, List<Edge>> adj = new HashMap<>();
+public class Graph<T> {
 
-	public void addLocation(Location location) {
-		adj.computeIfAbsent(location, k -> new ArrayList<>());
-	}
+    private final Map<T, List<Road<T>>> adjacencyList = new LinkedHashMap<>();
 
-	public void addEdge(Location from, Location to, double weight) {
-		addLocation(from);
-		addLocation(to);
-		adj.get(from).add(new Edge(to, weight));
-	}
+    public void addNode(T node) {
+        adjacencyList.putIfAbsent(node, new ArrayList<>());
+    }
 
-	public List<Location> getLocations() {
-		return new ArrayList<>(adj.keySet());
-	}
+    public void addRoad(T source, T destination, double distance) {
+        addRoad(source, destination, distance, true);
+    }
 
-	public List<Edge> getNeighbors(Location location) {
-		List<Edge> list = adj.get(location);
-		return list == null ? Collections.emptyList() : Collections.unmodifiableList(list);
-	}
+    public void addRoad(T source, T destination, double distance, boolean bidirectional) {
+        addNode(source);
+        addNode(destination);
+        adjacencyList.get(source).add(new Road<>(destination, distance));
+        if (bidirectional) {
+            adjacencyList.get(destination).add(new Road<>(source, distance));
+        }
+    }
 
-	public static class Location {
-		private final int id;
-		private final String name;
+    public List<Road<T>> getNeighbours(T node) {
+        return adjacencyList.getOrDefault(node, Collections.emptyList());
+    }
 
-		public Location(int id, String name) {
-			this.id = id;
-			this.name = name;
-		}
+    public Set<T> getAllNodes() {
+        return adjacencyList.keySet();
+    }
 
-		public int getId() {
-			return id;
-		}
+    public boolean contains(T node) {
+        return adjacencyList.containsKey(node);
+    }
 
-		public String getName() {
-			return name;
-		}
+    public int size() {
+        return adjacencyList.size();
+    }
 
-		@Override
-		public boolean equals(Object o) {
-			if (this == o) return true;
-			if (o == null || getClass() != o.getClass()) return false;
-			Location location = (Location) o;
-			return id == location.id;
-		}
+    public Graph<T> filter(Predicate<T> keepNode, BiPredicate<T, T> keepRoad) {
+        Graph<T> filtered = new Graph<>();
+        for (T node : adjacencyList.keySet()) {
+            if (!keepNode.test(node)) continue;
+            filtered.addNode(node);
+            for (Road<T> road : adjacencyList.get(node)) {
+                T dest = road.getDestination();
+                if (keepNode.test(dest) && keepRoad.test(node, dest)) {
+                    // roads are already bidirectional in the source graph, so add one-way here to avoid doubling up
+                    filtered.addRoad(node, dest, road.getDistance(), false);
+                }
+            }
+        }
+        return filtered;
+    }
 
-		@Override
-		public int hashCode() {
-			return Integer.hashCode(id);
-		}
-	}
+    public void display() {
+        for (T node : adjacencyList.keySet()) {
+            System.out.println(node + " connects to:");
+            for (Road<T> road : adjacencyList.get(node)) {
+                System.out.println("  -> " + road.getDestination() + " (" + road.getDistance() + " km)");
+            }
+        }
+    }
 
-	public static class Edge {
-		private final Location destination;
-		private final double weight;
-
-		public Edge(Location destination, double weight) {
-			this.destination = destination;
-			this.weight = weight;
-		}
-
-		public Location getDestination() {
-			return destination;
-		}
-
-		public double getWeight() {
-			return weight;
-		}
-	}
+    public Map<T, List<Road<T>>> getAdjacencyList() {
+        return adjacencyList;
+    }
 }
-
