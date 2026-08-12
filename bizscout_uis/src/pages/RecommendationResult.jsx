@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     Compass,
     MapPin,
@@ -12,34 +13,60 @@ import {
 
 import "./RecommendationResult.css";
 
-const recommendations = [
-    {
-        rank: 1,
-        name: "Colombo",
-        score: 89.5,
-        distance: 8.4,
-    },
-    {
-        rank: 2,
-        name: "Gampaha",
-        score: 76.2,
-        distance: 34.0,
-    },
-    {
-        rank: 3,
-        name: "Kalutara",
-        score: 68.4,
-        distance: 42.0,
-    },
-];
 
-function RecommendationResult( { onBack } ) {
-    const currentBranch = "Colombo Fort";
-    const recommendedProvince = "Western";
-    const selectedDistrict = "Colombo";
+function RecommendationResult({ recommendation, onBack }) {
+
+    // Safety check
+    if (!recommendation) {
+        return (
+            <div className="result-page">
+
+                <h2>
+                    No recommendation available.
+                </h2>
+
+                <button
+                    className="new-search-button"
+                    onClick={onBack}
+                >
+                    <RotateCcw size={15} />
+                    Back
+                </button>
+
+            </div>
+        );
+    }
+
+    // DATA FROM SPRING BOOT
+
+    const currentBranch =
+        recommendation.currentLocation;
+
+    const currentProvince =
+        recommendation.currentProvince;
+
+    const recommendedProvince =
+        recommendation.recommendedProvince;
+
+    const provinceScore =
+        recommendation.provinceScore;
+
+    const provinceDistance =
+        recommendation.provinceDistance;
+
+    const selectedDistrict =
+        recommendation.recommendedDistrict;
+
+    const districtScore =
+        recommendation.districtScore;
+
+    const districtDistance =
+        recommendation.districtDistance;
+
 
     return (
         <div className="result-page">
+
 
             {/* ================= HEADER ================= */}
 
@@ -52,6 +79,7 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
                     <div>
+
                         <p className="result-eyebrow">
                             MARKET EXPANSION
                         </p>
@@ -64,16 +92,22 @@ function RecommendationResult( { onBack } ) {
                             Data-driven location analysis based on
                             your current branch and market opportunity.
                         </p>
+
                     </div>
 
                 </div>
 
-                <button className="new-search-button" onClick={onBack}>
+
+                <button
+                    className="new-search-button"
+                    onClick={onBack}
+                >
                     <RotateCcw size={15} />
                     New Search
                 </button>
 
             </header>
+
 
 
             {/* ================= PATH ================= */}
@@ -90,23 +124,32 @@ function RecommendationResult( { onBack } ) {
 
                 </div>
 
+
                 <ChevronRight size={16} />
 
+
                 <div className="path-item">
+
                     <span>
                         {recommendedProvince}
                     </span>
+
                 </div>
+
 
                 <ChevronRight size={16} />
 
+
                 <div className="path-item active">
+
                     <span>
                         {selectedDistrict}
                     </span>
+
                 </div>
 
             </div>
+
 
 
             {/* ================= PROVINCE ================= */}
@@ -120,6 +163,7 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
                     <div>
+
                         <p>
                             PROVINCE ANALYSIS
                         </p>
@@ -127,9 +171,11 @@ function RecommendationResult( { onBack } ) {
                         <h2>
                             Recommended Province
                         </h2>
+
                     </div>
 
                 </div>
+
 
 
                 <div className="province-card">
@@ -137,20 +183,22 @@ function RecommendationResult( { onBack } ) {
                     <div>
 
                         <span className="small-label">
-                            BEST OPPORTUNITY
+                            BEST EXPANSION OPPORTUNITY
                         </span>
+
 
                         <h3>
                             {recommendedProvince}
                         </h3>
+
 
                         <div className="province-description">
 
                             <TrendingUp size={15} />
 
                             <span>
-                                Highest opportunity score among
-                                the analysed provinces.
+                                Recommended based on opportunity,
+                                distance, and market potential.
                             </span>
 
                         </div>
@@ -158,25 +206,61 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
 
+
                     <div className="province-score">
 
                         <span>
-                            Opportunity Score
+                            Final Score
                         </span>
 
+
                         <strong>
-                            89.50
+                            {provinceScore.toFixed(2)}
                         </strong>
 
+
                         <small>
-                            / 100
+                            Opportunity
                         </small>
 
                     </div>
 
                 </div>
 
+
+                {/* Province Details */}
+
+                <div className="analysis-details">
+
+                    <div>
+
+                        <span>
+                            Current Province
+                        </span>
+
+                        <strong>
+                            {currentProvince}
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Distance from Current Location
+                        </span>
+
+                        <strong>
+                            {provinceDistance.toFixed(2)} km
+                        </strong>
+
+                    </div>
+
+                </div>
+
             </section>
+
 
 
             {/* ================= DISTRICT ================= */}
@@ -190,85 +274,80 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
                     <div>
+
                         <p>
                             DISTRICT ANALYSIS
                         </p>
 
                         <h2>
-                            Recommended Districts
+                            Recommended District
                         </h2>
+
                     </div>
 
                 </div>
 
 
+
                 <div className="district-grid">
 
-                    {recommendations.map((district) => (
-
-                        <div
-                            key={district.name}
-                            className={
-                                district.rank === 1
-                                    ? "district-card selected"
-                                    : "district-card"
-                            }
-                        >
-
-                            <div className="district-top">
-
-                                <span className="rank">
-                                    #{district.rank}
-                                </span>
-
-                                {district.rank === 1 && (
-                                    <span className="best-tag">
-                                        BEST MATCH
-                                    </span>
-                                )}
-
-                            </div>
+                    <div className="district-card selected">
 
 
-                            <h3>
-                                {district.name}
-                            </h3>
+                        <div className="district-top">
 
+                            <span className="rank">
+                                #1
+                            </span>
 
-                            <div className="distance">
-
-                                <Route size={13} />
-
-                                <span>
-                                    {district.distance} km
-                                </span>
-
-                                <span>
-                                    from current branch
-                                </span>
-
-                            </div>
-
-
-                            <div className="district-score">
-
-                                <span>
-                                    Opportunity Score
-                                </span>
-
-                                <strong>
-                                    {district.score.toFixed(2)}
-                                </strong>
-
-                            </div>
+                            <span className="best-tag">
+                                BEST MATCH
+                            </span>
 
                         </div>
 
-                    ))}
+
+
+                        <h3>
+                            {selectedDistrict}
+                        </h3>
+
+
+
+                        <div className="distance">
+
+                            <Route size={13} />
+
+                            <span>
+                                {districtDistance.toFixed(2)} km
+                            </span>
+
+                            <span>
+                                from current branch
+                            </span>
+
+                        </div>
+
+
+
+                        <div className="district-score">
+
+                            <span>
+                                Final Score
+                            </span>
+
+                            <strong>
+                                {districtScore.toFixed(2)}
+                            </strong>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </section>
+
 
 
             {/* ================= FACILITIES ================= */}
@@ -282,6 +361,7 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
                     <div>
+
                         <p>
                             LOCATION ANALYSIS
                         </p>
@@ -289,9 +369,11 @@ function RecommendationResult( { onBack } ) {
                         <h2>
                             Nearby Facilities
                         </h2>
+
                     </div>
 
                 </div>
+
 
 
                 <div className="facility-grid">
@@ -299,13 +381,16 @@ function RecommendationResult( { onBack } ) {
                     <div className="facility-card">
 
                         <div className="facility-icon school">
+
                             <School size={21} />
+
                         </div>
+
 
                         <div>
 
                             <strong>
-                                14
+                                —
                             </strong>
 
                             <span>
@@ -317,16 +402,20 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
 
+
                     <div className="facility-card">
 
                         <div className="facility-icon hospital">
+
                             <Hospital size={21} />
+
                         </div>
+
 
                         <div>
 
                             <strong>
-                                6
+                                —
                             </strong>
 
                             <span>
@@ -340,12 +429,16 @@ function RecommendationResult( { onBack } ) {
                 </div>
 
 
+
                 <p className="facility-note">
+
                     Nearby facilities will be retrieved from
                     OpenStreetMap through the Overpass API.
+
                 </p>
 
             </section>
+
 
 
             {/* ================= MAP ================= */}
@@ -359,6 +452,7 @@ function RecommendationResult( { onBack } ) {
                     </div>
 
                     <div>
+
                         <p>
                             GEOGRAPHICAL VIEW
                         </p>
@@ -366,9 +460,11 @@ function RecommendationResult( { onBack } ) {
                         <h2>
                             Location Map
                         </h2>
+
                     </div>
 
                 </div>
+
 
 
                 <div className="map-container">
@@ -376,21 +472,36 @@ function RecommendationResult( { onBack } ) {
                     <div className="map-content">
 
                         <div className="map-pin">
+
                             <MapPin size={26} />
+
                         </div>
+
 
                         <h3>
                             OpenStreetMap
                         </h3>
 
+
                         <p>
-                            Recommended locations and nearby
-                            facilities will appear here.
+
+                            Recommended location:
+                            <strong>
+                                {" "}
+                                {selectedDistrict}, {recommendedProvince}
+                            </strong>
+
                         </p>
 
-                        <button className="view-map-button ">
+
+                        <button
+                            className="view-map-button"
+                        >
+
                             View Interactive Map
+
                             <ChevronRight size={15} />
+
                         </button>
 
                     </div>
@@ -400,14 +511,18 @@ function RecommendationResult( { onBack } ) {
             </section>
 
 
+
             {/* ================= FOOTER ================= */}
 
             <div className="result-footer">
 
                 <span>
+
                     Recommendation generated using
                     location data and opportunity scoring.
+
                 </span>
+
 
                 <span>
                     BizScout
