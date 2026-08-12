@@ -1,0 +1,662 @@
+/* =========================================
+   BIZSCOUT RECOMMENDATION RESULT
+   ========================================= */
+
+.result-page {
+    min-height: 100vh;
+    padding: 42px 7%;
+    background: #f7f4f1;
+    color: #2d2426;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4d9db;
+}
+
+.result-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.result-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #7b1e2b;
+    color: white;
+
+    flex-shrink: 0;
+}
+
+.result-eyebrow {
+    margin: 0 0 6px;
+
+    color: #7b1e2b;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.result-header h1 {
+    margin: 0;
+
+    color: #4a1720;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.result-description {
+    margin: 8px 0 0;
+
+    max-width: 570px;
+
+    color: #756b6e;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NEW SEARCH
+   ========================================= */
+
+.new-search-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 11px 17px;
+
+    border: 1px solid #d8c8cb;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #7b1e2b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.new-search-button:hover {
+    background: #f3e5e8;
+    border-color: #7b1e2b;
+}
+
+
+/* =========================================
+   LOCATION PATH
+   ========================================= */
+
+.location-path {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 26px 0 38px;
+
+    color: #8a7f81;
+
+    font-size: 13px;
+}
+
+.path-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.path-item.active {
+    color: #7b1e2b;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SECTION
+   ========================================= */
+
+.result-section {
+    margin-bottom: 42px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 17px;
+}
+
+.stage-number {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #4a1720;
+
+    color: white;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.section-title p {
+    margin: 0 0 3px;
+
+    color: #8a7f81;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    color: #4a1720;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PROVINCE CARD
+   ========================================= */
+
+.province-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 28px;
+
+    border-radius: 12px;
+
+    background: #4a1720;
+
+    color: white;
+
+    box-shadow: 0 8px 25px rgba(74, 23, 32, 0.12);
+}
+
+.small-label {
+    color: #d8b875;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.province-card h3 {
+    margin: 6px 0 9px;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.province-description {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #eadde0;
+
+    font-size: 12px;
+}
+
+.province-score {
+    text-align: right;
+}
+
+.province-score span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d8c5c9;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.province-score strong {
+    color: #d8b875;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.province-score small {
+    color: #cdbbc0;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   DISTRICT CARDS
+   ========================================= */
+
+.district-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.district-card {
+    padding: 19px;
+
+    border: 1px solid #e4d9db;
+
+    border-radius: 11px;
+
+    background: white;
+
+    transition: 0.2s ease;
+}
+
+.district-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #c9a4aa;
+
+    box-shadow:
+        0 7px 20px rgba(74, 23, 32, 0.07);
+}
+
+.district-card.selected {
+    border: 1.5px solid #b8944e;
+
+    box-shadow:
+        0 5px 18px rgba(184, 148, 78, 0.12);
+}
+
+.district-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+}
+
+.rank {
+    color: #8a7f81;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+}
+
+.best-tag {
+    padding: 4px 7px;
+
+    border-radius: 20px;
+
+    background: #f3e5e8;
+
+    color: #7b1e2b;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+}
+
+.district-card h3 {
+    margin: 0;
+
+    color: #4a1720;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.distance {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 7px;
+
+    color: #817779;
+
+    font-size: 11px;
+}
+
+.district-score {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-top: 22px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #eee6e7;
+}
+
+.district-score span {
+    color: #8a7f81;
+
+    font-size: 10px;
+}
+
+.district-score strong {
+    color: #7b1e2b;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   FACILITIES
+   ========================================= */
+
+.facility-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.facility-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 19px;
+
+    border: 1px solid #e4d9db;
+
+    border-radius: 11px;
+
+    background: white;
+}
+
+.facility-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.facility-icon.school {
+    background: #eee5e9;
+    color: #7b1e2b;
+}
+
+.facility-icon.hospital {
+    background: #f1e4e4;
+    color: #9c4a3f;
+}
+
+.facility-card strong {
+    display: block;
+
+    color: #4a1720;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.facility-card span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #817779;
+
+    font-size: 11px;
+}
+
+.facility-note {
+    margin: 11px 0 0;
+
+    color: #817779;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MAP
+   ========================================= */
+
+.map-container {
+    height: 390px;
+
+    overflow: hidden;
+
+    border: 1px solid #e4d9db;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+.map-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(123, 30, 43, 0.025),
+            rgba(123, 30, 43, 0.025)
+        );
+}
+
+.map-pin {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
+
+    border-radius: 50%;
+
+    background: #f3e5e8;
+
+    color: #7b1e2b;
+}
+
+.map-content h3 {
+    margin: 0 0 7px;
+
+    color: #4a1720;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+}
+
+.map-content p {
+    max-width: 400px;
+
+    margin: 0;
+
+    color: #817779;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.view-map-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-top: 18px;
+
+    padding: 10px 16px;
+
+    border: 1px solid #7b1e2b;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #7b1e2b;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.view-map-button:hover {
+    background: #7b1e2b;
+    color: white;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.result-footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e4d9db;
+
+    color: #95898b;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .result-page {
+        padding: 30px 5%;
+    }
+
+    .result-header {
+        flex-direction: column;
+    }
+
+    .district-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .province-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .province-score {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .result-header h1 {
+        font-size: 27px;
+    }
+
+    .location-path {
+        flex-wrap: wrap;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .result-footer {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
