@@ -5,6 +5,8 @@ import java.util.List;
 public class RecommendationResponse {
 
     private String currentLocation;
+    private double locationLatitude;
+    private double locationLongitude;
     private String currentProvince;
 
     private String recommendedProvince;
@@ -20,9 +22,8 @@ public class RecommendationResponse {
     private double locationScore;
     private double locationDistance;
     
-    public RecommendationResponse(String currentLocation,String currentProvince,String recommendedProvince,
-            double provinceScore,double provinceDistance,String recommendedDistrict,double districtScore,
-            double districtDistance,String recommendedLocation, double locationScore, double locationDistance,List<PlaceDto> nearbyPlaces) {
+    public RecommendationResponse(String currentLocation,String currentProvince,String recommendedProvince,double provinceScore,double provinceDistance,String recommendedDistrict,
+        double districtScore, double districtDistance,String recommendedLocation, double locationScore, double locationDistance,double locationLatitude, double locationLongitude,List<PlaceDto> nearbyPlaces) {
 
         this.currentLocation = currentLocation;
         this.currentProvince = currentProvince;
@@ -36,13 +37,16 @@ public class RecommendationResponse {
         this.locationScore = locationScore;
         this.locationDistance = locationDistance;
         this.nearbyPlaces = nearbyPlaces;
-
+        this.locationLatitude = locationLatitude;
+        this.locationLongitude = locationLongitude;
     }
     
 
     public String getRecommendedLocation() { return recommendedLocation; }
     public double getLocationScore() { return locationScore; }
     public double getLocationDistance() { return locationDistance; }
+    public double getLocationLatitude() { return locationLatitude; }
+    public double getLocationLongitude() { return locationLongitude; }
 
     public String getCurrentLocation() {
         return currentLocation;

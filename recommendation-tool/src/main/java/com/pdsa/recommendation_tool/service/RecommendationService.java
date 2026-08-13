@@ -648,6 +648,8 @@ for (OSMParser.OSMPlace p : places) {
         bestLocation.getName(),
         bestLocationFinalScore,
         bestLocationDistance,
+        bestLocation.getLatitude(),
+        bestLocation.getLongitude(),
         nearbyPlaces);
     }
 
