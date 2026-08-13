@@ -1,18 +1,48 @@
 import React, { useState } from "react";
 import { Compass, MapPin, ChevronRight, RotateCcw, TrendingUp,
-    School, Hospital, Route, Landmark, ShoppingCart, UtensilsCrossed, Coffee } from "lucide-react";
+    School, Hospital, Route, Landmark, ShoppingCart, UtensilsCrossed,
+    Coffee, Pill, Wallet, Fuel } from "lucide-react";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "./RecommendationResult.css";
 import "leaflet/dist/leaflet.css";
 
-const markerIcon = new L.Icon({
-    iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+// Color-coded marker icons per facility type (leaflet-color-markers CDN)
+const iconUrl = (color) =>
+    `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`;
+const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
+
+const makeIcon = (color) => new L.Icon({
+    iconUrl: iconUrl(color),
+    shadowUrl,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
 });
+
+const typeIconMap = {
+    school: makeIcon("blue"),
+    hospital: makeIcon("red"),
+    bank: makeIcon("gold"),
+    supermarket: makeIcon("green"),
+    restaurant: makeIcon("orange"),
+    cafe: makeIcon("violet"),
+    pharmacy: makeIcon("grey"),
+    atm: makeIcon("black"),
+    fuel: makeIcon("yellow"),
+};
+
+const getMarkerIcon = (type) => typeIconMap[type] ?? makeIcon("grey");
+
+// Distinct marker for the recommended location itself
+const recommendedIcon = new L.DivIcon({
+    className: "recommended-marker",
+    html: `<div class="recommended-marker-dot"></div>`,
+    iconSize: [22, 22],
+    iconAnchor: [11, 11],
+});
+
 
 function RecommendationResult({ recommendation, onBack }) {
 
@@ -52,15 +82,23 @@ function RecommendationResult({ recommendation, onBack }) {
         { type: "supermarket", label: "Supermarkets", Icon: ShoppingCart },
         { type: "restaurant", label: "Restaurants", Icon: UtensilsCrossed },
         { type: "cafe", label: "Cafes", Icon: Coffee },
+        { type: "pharmacy", label: "Pharmacies", Icon: Pill },
+        { type: "atm", label: "ATMs", Icon: Wallet },
+        { type: "fuel", label: "Fuel Stations", Icon: Fuel },
     ];
 
     const countByType = (type) => nearbyPlaces.filter(p => p.type === type).length;
+
+    const activeFacility = facilityTypes.find(f => f.type === expandedType);
+    const activeItems = expandedType ? nearbyPlaces.filter(p => p.type === expandedType) : [];
 
     const reasoning = [
         { stage: "Province", detail: `${recommendedProvince} selected — score ${provinceScore.toFixed(2)}, ${provinceDistance.toFixed(2)} km away` },
         { stage: "District", detail: `${selectedDistrict} selected — score ${districtScore.toFixed(2)}, ${districtDistance.toFixed(2)} km away` },
         { stage: "Location", detail: `${recommendedLocation} selected — score ${locationScore.toFixed(2)}, ${locationDistance.toFixed(2)} km away` },
-        { stage: "OSM Enrichment", detail: `${nearbyPlaces.length} nearby places found (${countByType("school")} schools, ${countByType("hospital")} hospitals)` },
+        { stage: "OSM Enrichment", detail: `${nearbyPlaces.length} nearby places found (${countByType("school")} schools,${countByType("pharmacy")} pharmacies,
+        ${countByType("cafe")} cafes, ${countByType("atm")} ATMs, ${countByType("fuel")} fuel stations, ${countByType("bank")} banks, ${countByType("supermarket")} supermarkets,
+        ${countByType("restaurant")} restaurants, ${countByType("hospital")} hospitals)` },
     ];
 
 
@@ -304,41 +342,56 @@ function RecommendationResult({ recommendation, onBack }) {
 
                 <div className="facility-grid">
                     {facilityTypes.map(({ type, label, Icon }) => {
-                        const items = nearbyPlaces.filter(p => p.type === type);
                         const isOpen = expandedType === type;
 
                         return (
                             <div
                                 key={type}
-                                className={`facility-card ${isOpen ? "expanded" : ""}`}
+                                className={`facility-card ${isOpen ? "selected" : ""}`}
                                 onClick={() => setExpandedType(isOpen ? null : type)}
                             >
-                                <div className="facility-card-header">
-                                    <div className={`facility-icon ${type}`}>
-                                        <Icon size={21} />
-                                    </div>
-                                    <div>
-                                        <strong>{items.length}</strong>
-                                        <span>{label} nearby</span>
-                                    </div>
+                                <div className={`facility-icon ${type}`}>
+                                    <Icon size={21} />
                                 </div>
-
-                                {isOpen && (
-                                    <ul className="facility-detail-list">
-                                        {items.length === 0 && <li>None found</li>}
-                                        {items.map((p, i) => (
-                                            <li key={i}>{p.name}</li>
-                                        ))}
-                                    </ul>
-                                )}
+                                <div>
+                                    <strong>{countByType(type)}</strong>
+                                    <span>{label} nearby</span>
+                                </div>
                             </div>
                         );
                     })}
                 </div>
 
+                {expandedType && (
+                    <div className="facility-strip">
+
+                        <div className="facility-strip-header">
+                            <span>{activeFacility?.label}</span>
+                            <button
+                                className="facility-strip-close"
+                                onClick={() => setExpandedType(null)}
+                            >
+                                Close
+                            </button>
+                        </div>
+
+                        <div className="facility-strip-row">
+                            {activeItems.length === 0 && (
+                                <span className="facility-strip-empty">None found</span>
+                            )}
+                            {activeItems.map((p, i) => (
+                                <div key={i} className="facility-chip">
+                                    {p.name}
+                                </div>
+                            ))}
+                        </div>
+
+                    </div>
+                )}
+
                 <p className="facility-note">
                     Nearby facilities retrieved from
-                    OpenStreetMap through the Overpass API.
+                    OpenStreetMap.
                 </p>
 
             </section>
@@ -361,7 +414,7 @@ function RecommendationResult({ recommendation, onBack }) {
                     <MapContainer
                         center={[recommendation.locationLatitude, recommendation.locationLongitude]}
                         zoom={14}
-                        style={{ height: "400px", width: "100%", borderRadius: "8px" }}
+                        style={{ height: "400px", width: "800px", borderRadius: "8px" }}
                     >
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -370,13 +423,17 @@ function RecommendationResult({ recommendation, onBack }) {
 
                         <Marker
                             position={[recommendation.locationLatitude, recommendation.locationLongitude]}
-                            icon={markerIcon}
+                            icon={recommendedIcon}
                         >
                             <Popup>{recommendedLocation} — Recommended</Popup>
                         </Marker>
 
                         {nearbyPlaces.map((p, i) => (
-                            <Marker key={i} position={[p.latitude, p.longitude]} icon={markerIcon}>
+                            <Marker
+                                key={i}
+                                position={[p.latitude, p.longitude]}
+                                icon={getMarkerIcon(p.type)}
+                            >
                                 <Popup>{p.name} ({p.type})</Popup>
                             </Marker>
                         ))}

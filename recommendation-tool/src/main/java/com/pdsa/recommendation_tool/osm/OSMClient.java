@@ -97,6 +97,14 @@ public class OSMClient {
                 + radius + ","
                 + latitude + ","
                 + longitude + ");"
+                // Pharmacies
+                + "node[\"amenity\"=\"pharmacy\"] (around:" + radius + "," + latitude + "," + longitude + ");"
+
+                // ATMs
+                + "node[\"amenity\"=\"atm\"] (around:" + radius + "," + latitude + "," + longitude + ");"
+
+                // Fuel stations
+                + "node[\"amenity\"=\"fuel\"] (around:" + radius + "," + latitude + "," + longitude + ");"
 
                 + ");"
                 + "out;";
