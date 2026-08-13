@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.pdsa.recommendation_tool.osm.OSMParser;
+import com.pdsa.recommendation_tool.dto.PlaceDto;
 
 @Service
 public class RecommendationService {
@@ -437,9 +439,8 @@ public class RecommendationService {
         
         // 16. RANK DISTRICTS
         
-
-        MaxHeap districtHeap =
-                new MaxHeap();
+//??? change for top 3 rec instead of 
+        MaxHeap districtHeap = new MaxHeap();
 
         List<String> districtNames =
                 new ArrayList<>(
@@ -466,28 +467,8 @@ public class RecommendationService {
 
 for (Location location : districtData) {
 
-    List<com.pdsa.recommendation_tool.osm.OSMParser.OSMPlace> places =
-            osmEnrichment.getPlaces(location);
+    averageScore += OpportunityCalculator.calculateScore(location);
 
-    long competitorCount = places.stream()
-            .filter(p -> p.getType().equalsIgnoreCase("shop")
-                      || p.getType().equalsIgnoreCase("restaurant")
-                      || p.getType().equalsIgnoreCase("cafe"))
-            .count();
-
-    long facilityCount = places.stream()
-            .filter(p -> p.getType().equalsIgnoreCase("school")
-                      || p.getType().equalsIgnoreCase("hospital")
-                      || p.getType().equalsIgnoreCase("bank"))
-            .count();
-
-    averageScore += OpportunityCalculator.calculateScore(location, competitorCount, facilityCount);
-
-    try {
-        Thread.sleep(1200);
-    } catch (InterruptedException e) {
-        Thread.currentThread().interrupt();
-    }
 }
 
 averageScore = averageScore / districtData.size();
@@ -604,19 +585,70 @@ averageScore = averageScore / districtData.size();
 
 
         
-        // 18. RETURN RESPONSE TO FRONTEND
-       
+
+List<Location> winningDistrictLocations = groupedDistricts.get(bestDistrict);
+
+Location bestLocation = null;
+double bestLocationFinalScore = Double.NEGATIVE_INFINITY;
+double bestLocationDistance = 0;
+
+for (Location location : winningDistrictLocations) {
+
+    double opportunity = OpportunityCalculator.calculateScore(location);
+
+    double distance = DistanceCalculator.calculateDistance(
+            currentLocation.getLatitude(),
+            currentLocation.getLongitude(),
+            location.getLatitude(),
+            location.getLongitude()
+    );
+
+    double finalScore = Math.round((opportunity - distance * 0.01) * 100.0) / 100.0;
+
+    System.out.println(
+            location.getName()
+                    + " | Opportunity: " + opportunity
+                    + " | Distance: " + String.format("%.2f", distance)
+                    + " km | Final Score: " + finalScore
+    );
+
+    if (finalScore > bestLocationFinalScore) {
+        bestLocationFinalScore = finalScore;
+        bestLocationDistance = distance;
+        bestLocation = location;
+    }
+}
+
+System.out.println();
+System.out.println("========== SELECTED LOCATION ==========");
+System.out.println("Location: " + bestLocation.getName());
+System.out.println("Final Score: " + bestLocationFinalScore);
+
+
+// c3dlt OSM ENRICHMENT called only for bestLocation
+
+List<OSMParser.OSMPlace> places = osmEnrichment.getPlaces(bestLocation);
+
+List<PlaceDto> nearbyPlaces = new ArrayList<>();
+
+for (OSMParser.OSMPlace p : places) {
+    nearbyPlaces.add(new PlaceDto(p.getName(), p.getType(), p.getLatitude(), p.getLongitude()));
+}
+        // c4dlt return value
 
         return new RecommendationResponse(
-                currentLocation.getName(),
-                currentProvince,
-                bestProvince.getName(),
-                bestProvinceScore,
-                bestProvinceDistance,
-                bestDistrict,
-                bestDistrictScore,
-                bestDistrictDistance
-        );
+        currentLocation.getName(),
+        currentProvince,
+        bestProvince.getName(),
+        bestProvinceScore,
+        bestProvinceDistance,
+        bestDistrict,
+        bestDistrictScore,
+        bestDistrictDistance,
+        bestLocation.getName(),
+        bestLocationFinalScore,
+        bestLocationDistance,
+        nearbyPlaces);
     }
 
 
@@ -627,8 +659,7 @@ averageScore = averageScore / districtData.size();
     private Map<String, Province> createProvinces(
             List<Location> locations) {
 
-        Map<String, List<Location>> grouped =
-                new HashMap<>();
+        Map<String, List<Location>> grouped = new HashMap<>();
 
 
         for (Location location : locations) {

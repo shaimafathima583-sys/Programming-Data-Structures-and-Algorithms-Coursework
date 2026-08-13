@@ -660,3 +660,51 @@
         gap: 7px;
     }
 }
+
+.reasoning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.reasoning-item {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    padding: 12px 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.reasoning-stage {
+    min-width: 110px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.reasoning-detail {
+    font-size: 14px;
+    color: #222;
+}
+
+.place-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.place-list li {
+    font-size: 13px;
+    background: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.place-list li span {
+    color: #888;
+}

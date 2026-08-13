@@ -38,30 +38,27 @@ function RecommendationResult({ recommendation, onBack }) {
     }
 
     // DATA FROM SPRING BOOT
+    const currentBranch = recommendation.currentLocation;
+    const currentProvince = recommendation.currentProvince;
+    const recommendedProvince = recommendation.recommendedProvince;
+    const provinceScore = recommendation.provinceScore;
+    const provinceDistance = recommendation.provinceDistance;
+    const selectedDistrict = recommendation.recommendedDistrict;
+    const districtScore = recommendation.districtScore;
+    const districtDistance = recommendation.districtDistance;
+    const recommendedLocation = recommendation.recommendedLocation;
+    const locationScore = recommendation.locationScore;
+    const locationDistance = recommendation.locationDistance;
+    const nearbyPlaces = recommendation.nearbyPlaces ?? [];
+    const schoolCount = nearbyPlaces.filter(p => p.type === "school").length;
+    const hospitalCount = nearbyPlaces.filter(p => p.type === "hospital").length;
 
-    const currentBranch =
-        recommendation.currentLocation;
-
-    const currentProvince =
-        recommendation.currentProvince;
-
-    const recommendedProvince =
-        recommendation.recommendedProvince;
-
-    const provinceScore =
-        recommendation.provinceScore;
-
-    const provinceDistance =
-        recommendation.provinceDistance;
-
-    const selectedDistrict =
-        recommendation.recommendedDistrict;
-
-    const districtScore =
-        recommendation.districtScore;
-
-    const districtDistance =
-        recommendation.districtDistance;
+    const reasoning = [
+        { stage: "Province", detail: `${recommendedProvince} selected — score ${provinceScore.toFixed(2)}, ${provinceDistance.toFixed(2)} km away` },
+        { stage: "District", detail: `${selectedDistrict} selected — score ${districtScore.toFixed(2)}, ${districtDistance.toFixed(2)} km away` },
+        { stage: "Location", detail: `${recommendedLocation} selected — score ${locationScore.toFixed(2)}, ${locationDistance.toFixed(2)} km away` },
+        { stage: "OSM Enrichment", detail: `${nearbyPlaces.length} nearby places found (${schoolCount} schools, ${hospitalCount} hospitals)` },
+    ];
 
 
     return (
@@ -113,39 +110,32 @@ function RecommendationResult({ recommendation, onBack }) {
             {/* ================= PATH ================= */}
 
             <div className="location-path">
-
                 <div className="path-item">
-
                     <MapPin size={15} />
-
                     <span>
                         {currentBranch}
                     </span>
-
                 </div>
-
-
                 <ChevronRight size={16} />
 
 
                 <div className="path-item">
-
                     <span>
                         {recommendedProvince}
                     </span>
-
                 </div>
 
+                <ChevronRight size={16} />
+
+                <div className="path-item">
+                    <span>{selectedDistrict}</span>
+                </div>
 
                 <ChevronRight size={16} />
 
 
                 <div className="path-item active">
-
-                    <span>
-                        {selectedDistrict}
-                    </span>
-
+                    <span>{recommendedLocation}</span>
                 </div>
 
             </div>
@@ -350,7 +340,7 @@ function RecommendationResult({ recommendation, onBack }) {
 
 
 
-            {/* ================= FACILITIES ================= */}
+            {/* ================= LOCATION ================= */}
 
             <section className="result-section">
 
@@ -363,13 +353,123 @@ function RecommendationResult({ recommendation, onBack }) {
                     <div>
 
                         <p>
-                            LOCATION ANALYSIS
+                            LOCATION SELECTION
                         </p>
 
                         <h2>
-                            Nearby Facilities
+                            Recommended Location
                         </h2>
 
+                    </div>
+
+                </div>
+
+
+
+                <div className="district-grid">
+
+                    <div className="district-card selected">
+
+                        <div className="district-top">
+
+                            <span className="rank">
+                                #1
+                            </span>
+
+                            <span className="best-tag">
+                                BEST MATCH
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            {recommendedLocation}
+                        </h3>
+
+
+                        <div className="distance">
+
+                            <Route size={13} />
+
+                            <span>
+                                {locationDistance.toFixed(2)} km
+                            </span>
+
+                            <span>
+                                from current branch
+                            </span>
+
+                        </div>
+
+
+                        <div className="district-score">
+
+                            <span>
+                                Final Score
+                            </span>
+
+                            <strong>
+                                {locationScore.toFixed(2)}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            {/* ================= REASONING ================= */}
+
+            <section className="result-section">
+
+                <div className="section-title">
+
+                    <div className="stage-number">
+                        04
+                    </div>
+
+                    <div>
+                        <p>SELECTION LOGIC</p>
+                        <h2>How we got here</h2>
+                    </div>
+
+                </div>
+
+                <div className="reasoning-list">
+                    {reasoning.map((step, i) => (
+                        <div key={i} className="reasoning-item">
+                            <span className="reasoning-stage">{step.stage}</span>
+                            <span className="reasoning-detail">{step.detail}</span>
+                        </div>
+                    ))}
+                </div>
+
+            </section>
+
+
+
+            {/* ================= FACILITIES ================= */}
+
+            <section className="result-section">
+
+                <div className="section-title">
+
+                    <div className="stage-number">
+                        05
+                    </div>
+
+                    <div>
+                        <p>
+                            LOCATION ANALYSIS
+                        </p>
+                        <h2>
+                            Nearby Facilities
+                        </h2>
                     </div>
 
                 </div>
@@ -390,7 +490,7 @@ function RecommendationResult({ recommendation, onBack }) {
                         <div>
 
                             <strong>
-                                —
+                                {schoolCount}
                             </strong>
 
                             <span>
@@ -415,7 +515,7 @@ function RecommendationResult({ recommendation, onBack }) {
                         <div>
 
                             <strong>
-                                —
+                                {hospitalCount}
                             </strong>
 
                             <span>
@@ -429,10 +529,20 @@ function RecommendationResult({ recommendation, onBack }) {
                 </div>
 
 
+                {nearbyPlaces.length > 0 && (
+                    <ul className="place-list">
+                        {nearbyPlaces.map((p, i) => (
+                            <li key={i}>
+                                {p.name} <span>({p.type})</span>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
 
                 <p className="facility-note">
 
-                    Nearby facilities will be retrieved from
+                    Nearby facilities retrieved from
                     OpenStreetMap through the Overpass API.
 
                 </p>
@@ -448,7 +558,7 @@ function RecommendationResult({ recommendation, onBack }) {
                 <div className="section-title">
 
                     <div className="stage-number">
-                        04
+                        06
                     </div>
 
                     <div>
@@ -488,7 +598,7 @@ function RecommendationResult({ recommendation, onBack }) {
                             Recommended location:
                             <strong>
                                 {" "}
-                                {selectedDistrict}, {recommendedProvince}
+                                {recommendedLocation}, {selectedDistrict}, {recommendedProvince}
                             </strong>
 
                         </p>

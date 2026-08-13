@@ -1,5 +1,7 @@
 package com.pdsa.recommendation_tool.dto;
 
+import java.util.List;
+
 public class RecommendationResponse {
 
     private String currentLocation;
@@ -12,17 +14,15 @@ public class RecommendationResponse {
     private String recommendedDistrict;
     private double districtScore;
     private double districtDistance;
+    private List<PlaceDto> nearbyPlaces;
 
-
-    public RecommendationResponse(
-            String currentLocation,
-            String currentProvince,
-            String recommendedProvince,
-            double provinceScore,
-            double provinceDistance,
-            String recommendedDistrict,
-            double districtScore,
-            double districtDistance) {
+    private String recommendedLocation;
+    private double locationScore;
+    private double locationDistance;
+    
+    public RecommendationResponse(String currentLocation,String currentProvince,String recommendedProvince,
+            double provinceScore,double provinceDistance,String recommendedDistrict,double districtScore,
+            double districtDistance,String recommendedLocation, double locationScore, double locationDistance,List<PlaceDto> nearbyPlaces) {
 
         this.currentLocation = currentLocation;
         this.currentProvince = currentProvince;
@@ -32,8 +32,17 @@ public class RecommendationResponse {
         this.recommendedDistrict = recommendedDistrict;
         this.districtScore = districtScore;
         this.districtDistance = districtDistance;
-    }
+        this.recommendedLocation = recommendedLocation;
+        this.locationScore = locationScore;
+        this.locationDistance = locationDistance;
+        this.nearbyPlaces = nearbyPlaces;
 
+    }
+    
+
+    public String getRecommendedLocation() { return recommendedLocation; }
+    public double getLocationScore() { return locationScore; }
+    public double getLocationDistance() { return locationDistance; }
 
     public String getCurrentLocation() {
         return currentLocation;
@@ -66,4 +75,7 @@ public class RecommendationResponse {
     public double getDistrictDistance() {
         return districtDistance;
     }
+    public List<PlaceDto> getNearbyPlaces() {
+    return nearbyPlaces;
+}
 }
