@@ -1,0 +1,196 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-13T07:07:59Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1727331679,
+  "lat": 7.4771355,
+  "lon": 80.6268149,
+  "tags": {
+    "amenity": "school",
+    "name": "Zahira College",
+    "wikidata": "Q8064683",
+    "wikipedia": "en:Zahira College, Matale"
+  }
+},
+{
+  "type": "node",
+  "id": 1728628587,
+  "lat": 7.4856667,
+  "lon": 80.6242399,
+  "tags": {
+    "amenity": "school",
+    "name": "Hindu College"
+  }
+},
+{
+  "type": "node",
+  "id": 3799292759,
+  "lat": 7.4691277,
+  "lon": 80.6226369,
+  "tags": {
+    "amenity": "bank",
+    "name": "peoples bank"
+  }
+},
+{
+  "type": "node",
+  "id": 5219301101,
+  "lat": 7.4612119,
+  "lon": 80.5873400,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Owilikanda Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 5219301114,
+  "lat": 7.4579566,
+  "lon": 80.5867633,
+  "tags": {
+    "amenity": "school",
+    "name": "Owilikanda Primary School"
+  }
+},
+{
+  "type": "node",
+  "id": 5377242221,
+  "lat": 7.4754560,
+  "lon": 80.6224438,
+  "tags": {
+    "amenity": "school",
+    "name": "Dahampasala matale"
+  }
+},
+{
+  "type": "node",
+  "id": 5407705390,
+  "lat": 7.5083761,
+  "lon": 80.6228191,
+  "tags": {
+    "addr:city": "palapathwela",
+    "addr:housenumber": "18",
+    "addr:street": "Totagamuwa",
+    "amenity": "restaurant",
+    "cuisine": "asian;regional;italian;chinese;sandwich;chicken;ice_cream;thai;pizza;seafood",
+    "delivery": "no",
+    "name": "Apey Bojun Plus",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "outdoor_seating": "yes",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "phone": "+662050571",
+    "smoking": "separated",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 5922321785,
+  "lat": 7.4683118,
+  "lon": 80.6238028,
+  "tags": {
+    "addr:street": "Jaffna - Kandy Road",
+    "amenity": "restaurant",
+    "name:en": "New Rajeswarie Bhawan"
+  }
+},
+{
+  "type": "node",
+  "id": 6642778889,
+  "lat": 7.4714475,
+  "lon": 80.6228720,
+  "tags": {
+    "addr:street": "King Street",
+    "amenity": "restaurant",
+    "cuisine": "local",
+    "name:en": "Foods"
+  }
+},
+{
+  "type": "node",
+  "id": 11273854280,
+  "lat": 7.4552155,
+  "lon": 80.6280332,
+  "tags": {
+    "addr:city": "Matale",
+    "addr:housenumber": "B132",
+    "addr:street": "Kaizer Street",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop;regional;pizza",
+    "name": "barista cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 12628450421,
+  "lat": 7.4398509,
+  "lon": 80.6316596,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "New Ransiri Restaurant & Bakehouse"
+  }
+},
+{
+  "type": "node",
+  "id": 12880758078,
+  "lat": 7.4549998,
+  "lon": 80.5816433,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "supuni resturant"
+  }
+},
+{
+  "type": "node",
+  "id": 12880761173,
+  "lat": 7.4549410,
+  "lon": 80.5829608,
+  "tags": {
+    "amenity": "bank",
+    "name": "gramiya bank"
+  }
+},
+{
+  "type": "node",
+  "id": 12880878404,
+  "lat": 7.4554191,
+  "lon": 80.5811398,
+  "tags": {
+    "name": "lilananda store",
+    "payment:cash": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12880928659,
+  "lat": 7.4558033,
+  "lon": 80.5811836,
+  "tags": {
+    "name": "sarath shop",
+    "operator": "sarath",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 12880936977,
+  "lat": 7.4571519,
+  "lon": 80.5865417,
+  "tags": {
+    "amenity": "school",
+    "name": "owilikanda school ground"
+  }
+}
+
+  ]
+}

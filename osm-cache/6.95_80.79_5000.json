@@ -1,0 +1,909 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-13T07:07:59Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 872981089,
+  "lat": 6.9674350,
+  "lon": 80.7664275,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "restaurant",
+    "description": "chinese",
+    "name": "Glendover Chinese"
+  }
+},
+{
+  "type": "node",
+  "id": 872981094,
+  "lat": 6.9759660,
+  "lon": 80.7657226,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "brand": "Cargills Food City",
+    "brand:wikidata": "Q58353955",
+    "name": "Cargills Food City",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 873837837,
+  "lat": 6.9721726,
+  "lon": 80.7661743,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "bank",
+    "brand": "Hatton National Bank",
+    "brand:wikidata": "Q3532080",
+    "name": "Hatton National Bank",
+    "short_name": "HNB"
+  }
+},
+{
+  "type": "node",
+  "id": 873837841,
+  "lat": 6.9733214,
+  "lon": 80.7652770,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Sampath Bank",
+    "brand:wikidata": "Q7410095",
+    "brand:wikipedia": "en:Sampath Bank",
+    "name": "Sampath Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 873837844,
+  "lat": 6.9727230,
+  "lon": 80.7682606,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:housenumber": "36/3",
+    "addr:street": "Buddha Jayanthi Mw",
+    "alt_name": "Nuwaraeliya Branch",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Commercial Bank of Ceylon",
+    "brand:wikidata": "Q5152468",
+    "name": "Commercial Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 873837848,
+  "lat": 6.9723489,
+  "lon": 80.7677210,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "bank",
+    "brand": "Seylan Bank",
+    "brand:wikidata": "Q3532083",
+    "brand:wikipedia": "en:Seylan Bank",
+    "name": "Seylan Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 873837860,
+  "lat": 6.9729391,
+  "lon": 80.7670088,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "name": "Super K",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 873838774,
+  "lat": 6.9732248,
+  "lon": 80.7674216,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:street": "Park Road",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "NSB",
+    "brand:wikidata": "Q12500189",
+    "brand:wikipedia": "en:National Savings Bank (Sri Lanka)",
+    "drive_through": "no",
+    "name": "NSB"
+  }
+},
+{
+  "type": "node",
+  "id": 873842126,
+  "lat": 6.9719557,
+  "lon": 80.7803664,
+  "tags": {
+    "addr:city": "Hawaeliya",
+    "amenity": "bank",
+    "brand": "HNB",
+    "brand:wikidata": "Q3532080",
+    "name": "HNB"
+  }
+},
+{
+  "type": "node",
+  "id": 873842128,
+  "lat": 6.9741095,
+  "lon": 80.7803117,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Nuwara Eliya General Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 2035811495,
+  "lat": 6.9731406,
+  "lon": 80.7666849,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Milano"
+  }
+},
+{
+  "type": "node",
+  "id": 2035811538,
+  "lat": 6.9728332,
+  "lon": 80.7675687,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "bank",
+    "name": "People's Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 2035811627,
+  "lat": 6.9723493,
+  "lon": 80.7681614,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Ideal Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 2266644825,
+  "lat": 6.9739701,
+  "lon": 80.7665455,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:housename": "Bank of Ceylon",
+    "addr:street": "Lawson Street",
+    "alt_name": "Super Grade Branch, Nuwara Eliya",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Bank of Ceylon",
+    "brand:wikidata": "Q2882652",
+    "brand:wikipedia": "en:Bank of Ceylon",
+    "int_name": "Bank Of Ceylon, BOC",
+    "name": "Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 2266647912,
+  "lat": 6.9740886,
+  "lon": 80.7686362,
+  "tags": {
+    "alt_name": "Nuwara Eliya - Kachcheri ext.",
+    "amenity": "bank",
+    "atm": "yes",
+    "branch": "Nuwara Eliya  Kachcheri ext ",
+    "brand": "Bank of Ceylon",
+    "brand:wikidata": "Q2882652",
+    "int_name": "Bank Of Ceylon, BOC",
+    "name": "Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 2714443823,
+  "lat": 6.9725901,
+  "lon": 80.7664757,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "bank",
+    "atm": "yes",
+    "name": "NDB Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3390588309,
+  "lat": 6.9676346,
+  "lon": 80.7657531,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "restaurant",
+    "name": "Grand Indian"
+  }
+},
+{
+  "type": "node",
+  "id": 3392110534,
+  "lat": 6.9523363,
+  "lon": 80.7849276,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "restaurant",
+    "name": "Adma Agro Strawberry Farm Shop"
+  }
+},
+{
+  "type": "node",
+  "id": 3392139303,
+  "lat": 6.9268692,
+  "lon": 80.8229560,
+  "tags": {
+    "addr:city": "Hakgala",
+    "addr:street": "Peradeniya-Badulla-Chenkaladi Road",
+    "amenity": "restaurant",
+    "name": "Humbugs"
+  }
+},
+{
+  "type": "node",
+  "id": 3393447974,
+  "lat": 6.9720881,
+  "lon": 80.7777290,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "amenity": "school",
+    "name": "Girls' High School"
+  }
+},
+{
+  "type": "node",
+  "id": 3880396357,
+  "lat": 6.9779048,
+  "lon": 80.7656051,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Co-operative Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 3880398627,
+  "lat": 6.9743790,
+  "lon": 80.7673681,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Medisi Channel Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 4159999836,
+  "lat": 6.9701049,
+  "lon": 80.7633712,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Hill Club"
+  }
+},
+{
+  "type": "node",
+  "id": 4286227394,
+  "lat": 6.9711771,
+  "lon": 80.7672281,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional;burger;sandwich;breakfast",
+    "internet_access": "wlan",
+    "name": "Themparadu",
+    "name:en": "Themparadu"
+  }
+},
+{
+  "type": "node",
+  "id": 4307037689,
+  "lat": 6.9726278,
+  "lon": 80.7680450,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:housenumber": "60/2",
+    "addr:street": "Park Road",
+    "amenity": "restaurant",
+    "cuisine": "curry;local;asian",
+    "diet:vegetarian": "yes",
+    "fixme": "phone number seems wrong (too many digits)",
+    "name": "Anmapoorane Restaurant",
+    "phone": "+94 770 208 5556"
+  }
+},
+{
+  "type": "node",
+  "id": 4338252673,
+  "lat": 6.9766020,
+  "lon": 80.7639360,
+  "tags": {
+    "addr:housenumber": "158",
+    "addr:street": "Kandy Road",
+    "amenity": "restaurant",
+    "description": "Hot Dish & Rooms",
+    "name": "Cool Land Hot Dish",
+    "phone": "+94722449667"
+  }
+},
+{
+  "type": "node",
+  "id": 4447532684,
+  "lat": 6.9138904,
+  "lon": 80.7957643,
+  "tags": {
+    "addr:city": "Kandeala",
+    "addr:street": "Ambewela Road",
+    "amenity": "restaurant",
+    "name": "Nitwo Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 4447532686,
+  "lat": 6.9288546,
+  "lon": 80.7890776,
+  "tags": {
+    "addr:city": "Meepilimana",
+    "addr:street": "Ambewela Road",
+    "amenity": "bank",
+    "name": "Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 4496380891,
+  "lat": 6.9538801,
+  "lon": 80.7824494,
+  "tags": {
+    "amenity": "restaurant",
+    "indoor_seating": "yes",
+    "name:en": "Indiansummer",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4546240989,
+  "lat": 6.9725746,
+  "lon": 80.7670016,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "cake;curry;fish;indian;local;tea",
+    "name:en": "New Najeemas"
+  }
+},
+{
+  "type": "node",
+  "id": 4583924590,
+  "lat": 6.9686600,
+  "lon": 80.7649603,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-10-03",
+    "cuisine": "thai",
+    "delivery": "no",
+    "name": "Grand Thai",
+    "outdoor_seating": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4609680994,
+  "lat": 6.9764162,
+  "lon": 80.7647848,
+  "tags": {
+    "amenity": "cafe",
+    "name:en": "Dine-way",
+    "name:ru": "Отличная еда"
+  }
+},
+{
+  "type": "node",
+  "id": 4683712840,
+  "lat": 6.9702418,
+  "lon": 80.7673010,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:street": "Badulla Road",
+    "amenity": "restaurant",
+    "capacity": "50",
+    "check_date": "2023-10-03",
+    "cuisine": "regional",
+    "name": "Hela Bojun Hala",
+    "opening_hours": "Mo-Su 07:00-19:00"
+  }
+},
+{
+  "type": "node",
+  "id": 4683728154,
+  "lat": 6.9720581,
+  "lon": 80.7667256,
+  "tags": {
+    "addr:street": "New Bazar Street",
+    "amenity": "restaurant",
+    "name": "Remarko"
+  }
+},
+{
+  "type": "node",
+  "id": 4683728579,
+  "lat": 6.9723093,
+  "lon": 80.7670130,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Thaj Hotel and Bake House"
+  }
+},
+{
+  "type": "node",
+  "id": 4683733219,
+  "lat": 6.9671991,
+  "lon": 80.7687151,
+  "tags": {
+    "amenity": "restaurant",
+    "description": "Local small restaurant, Sri Lankan cuisine",
+    "name": "Two"
+  }
+},
+{
+  "type": "node",
+  "id": 4807599245,
+  "lat": 6.9722436,
+  "lon": 80.7678579,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:street": "Park Road",
+    "amenity": "bank",
+    "name": "DFCC Wardhana Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4882143896,
+  "lat": 6.9385097,
+  "lon": 80.7466230,
+  "tags": {
+    "amenity": "school"
+  }
+},
+{
+  "type": "node",
+  "id": 4885454574,
+  "lat": 6.9735837,
+  "lon": 80.7657096,
+  "tags": {
+    "name": "Sathosa",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 4903090621,
+  "lat": 6.9676736,
+  "lon": 80.7656697,
+  "tags": {
+    "amenity": "cafe",
+    "delivery": "no",
+    "name": "The Grand Café",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4905866722,
+  "lat": 6.9583585,
+  "lon": 80.7695994,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "name": "Salmiya Pizzeria",
+    "opening_hours": "Mo-Su 12:00-23:00",
+    "outdoor_seating": "no",
+    "self_service": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5134202321,
+  "lat": 6.9730264,
+  "lon": 80.7667137,
+  "tags": {
+    "addr:street": "New Bazaar Street",
+    "amenity": "restaurant",
+    "cuisine": "curry;fish;indian;coffee_shop;local",
+    "diet:vegetarian": "yes",
+    "name": "De Silva Food Center",
+    "name:de": "de Silva Food Center",
+    "opening_hours": "24/7"
+  }
+},
+{
+  "type": "node",
+  "id": 5177750319,
+  "lat": 6.9765710,
+  "lon": 80.7639675,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 5219748021,
+  "lat": 6.9599433,
+  "lon": 80.7721047,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Restaurant Two"
+  }
+},
+{
+  "type": "node",
+  "id": 5463968121,
+  "lat": 6.9534156,
+  "lon": 80.7815194,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Bite Me Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 5484270823,
+  "lat": 6.9444282,
+  "lon": 80.7503911,
+  "tags": {
+    "amenity": "cafe",
+    "name:en": "Edinburgh Tea Train"
+  }
+},
+{
+  "type": "node",
+  "id": 5647081824,
+  "lat": 6.9736811,
+  "lon": 80.7663344,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "White Tea Pot"
+  }
+},
+{
+  "type": "node",
+  "id": 6155205185,
+  "lat": 6.9690282,
+  "lon": 80.7643089,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Grand Dewasiri Seafood Restaurant",
+    "phone": "+94 522 222 454"
+  }
+},
+{
+  "type": "node",
+  "id": 6161103085,
+  "lat": 6.9674216,
+  "lon": 80.7672952,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-10-03",
+    "cuisine": "arab;indian;international;asian",
+    "name": "Araliya City Food Court"
+  }
+},
+{
+  "type": "node",
+  "id": 6233687329,
+  "lat": 6.9732642,
+  "lon": 80.7664083,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Palladium Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6233687347,
+  "lat": 6.9758467,
+  "lon": 80.7658651,
+  "tags": {
+    "amenity": "bank",
+    "name": "Nations Trust Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 6251502285,
+  "lat": 6.9733459,
+  "lon": 80.7810774,
+  "tags": {
+    "amenity": "cafe",
+    "name:en": "tasty"
+  }
+},
+{
+  "type": "node",
+  "id": 6383734515,
+  "lat": 6.9549139,
+  "lon": 80.7905069,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Hideout Cabins"
+  }
+},
+{
+  "type": "node",
+  "id": 7081988163,
+  "lat": 6.9682446,
+  "lon": 80.7646533,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2023-10-03",
+    "cuisine": "international",
+    "delivery": "no",
+    "name": "Magnolia"
+  }
+},
+{
+  "type": "node",
+  "id": 7082455457,
+  "lat": 6.9606257,
+  "lon": 80.7687742,
+  "tags": {
+    "name": "Super K",
+    "operator": "Keells",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 7106133387,
+  "lat": 6.9528047,
+  "lon": 80.7857343,
+  "tags": {
+    "addr:street": "magastota nuwaraliya",
+    "amenity": "restaurant",
+    "cuisine": "asian;chicken;curry;burger;breakfast;indian;chinese;coffee_shop;local;seafood;regional",
+    "diet:vegetarian": "yes",
+    "name": "The Kitchen",
+    "opening_hours": "Mo-Su 07:00-23:00"
+  }
+},
+{
+  "type": "node",
+  "id": 7994212725,
+  "lat": 6.9338827,
+  "lon": 80.8065825,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Cinnamon"
+  }
+},
+{
+  "type": "node",
+  "id": 9397061917,
+  "lat": 6.9607544,
+  "lon": 80.7680048,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut",
+    "name:en": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9711477334,
+  "lat": 6.9764988,
+  "lon": 80.7643434,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Dushan's Home Kitchen",
+    "phone": "0094713183699"
+  }
+},
+{
+  "type": "node",
+  "id": 9776308018,
+  "lat": 6.9607827,
+  "lon": 80.7919059,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "little england hotele"
+  }
+},
+{
+  "type": "node",
+  "id": 10139139602,
+  "lat": 6.9424050,
+  "lon": 80.7444972,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "NANUOYA HOSPITAL"
+  }
+},
+{
+  "type": "node",
+  "id": 10209073473,
+  "lat": 6.9715977,
+  "lon": 80.7670911,
+  "tags": {
+    "amenity": "bank",
+    "atm": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10628264710,
+  "lat": 6.9663696,
+  "lon": 80.7723191,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:district": "22200",
+    "addr:street": "Upper Lake Rd",
+    "amenity": "restaurant",
+    "check_date": "2024-12-14",
+    "name": "Themparadu",
+    "name:en": "Themparadu"
+  }
+},
+{
+  "type": "node",
+  "id": 10783858512,
+  "lat": 6.9698098,
+  "lon": 80.7848184,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 11052212805,
+  "lat": 6.9606825,
+  "lon": 80.7683905,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Sambole Restaurant - Nuwara Eliya"
+  }
+},
+{
+  "type": "node",
+  "id": 11637865269,
+  "lat": 6.9726047,
+  "lon": 80.7665302,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "The Elite Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 12109926651,
+  "lat": 6.9726171,
+  "lon": 80.7666886,
+  "tags": {
+    "addr:city": "Nuwara Eliya",
+    "addr:housenumber": "52",
+    "addr:street": "New Bazaar Rd",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "diet:vegetarian": "yes",
+    "name": "Ambaal's pure vegetarian Hotel & Restaurant",
+    "opening_hours": "Mo-Su 07:00-22:00",
+    "phone": "0522235281"
+  }
+},
+{
+  "type": "node",
+  "id": 12110035535,
+  "lat": 6.9636720,
+  "lon": 80.7722405,
+  "tags": {
+    "amenity": "cafe",
+    "check_date": "2025-03-08",
+    "diet:vegetarian": "yes",
+    "name": "Ayurveda Coffee Shop",
+    "outdoor_seating": "yes",
+    "phone": "+94 522234365",
+    "source": "survey",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12145442026,
+  "lat": 6.9786150,
+  "lon": 80.7584501,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 12609609401,
+  "lat": 6.9726699,
+  "lon": 80.7666957,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "chinese;indian;local",
+    "name": "Ceylon Kitchen",
+    "opening_hours": "Mo-Su 09:00-22:00",
+    "phone": "+94718308308"
+  }
+},
+{
+  "type": "node",
+  "id": 12629721601,
+  "lat": 6.9738777,
+  "lon": 80.7658352,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Dhatha home foods"
+  }
+},
+{
+  "type": "node",
+  "id": 13420585877,
+  "lat": 6.9573683,
+  "lon": 80.7731884,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-12-30",
+    "name": "Frostbite",
+    "name:en": "Frostbite"
+  }
+},
+{
+  "type": "node",
+  "id": 13556008001,
+  "lat": 6.9633602,
+  "lon": 80.7667938,
+  "tags": {
+    "addr:postcode": "22200",
+    "addr:street": "Greenways, Badulla Road",
+    "amenity": "cafe",
+    "contact:facebook": "BaristaSL",
+    "internet_access": "wlan",
+    "name": "Barista - Nuwara Eliya",
+    "opening_hours": "Mo-Su 08:00-22:00",
+    "outdoor_seating": "yes",
+    "phone": "+94 522 050 116",
+    "website": "https://barista.lk/"
+  }
+}
+
+  ]
+}
