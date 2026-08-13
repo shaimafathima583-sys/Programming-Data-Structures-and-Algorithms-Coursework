@@ -414,7 +414,7 @@ function RecommendationResult({ recommendation, onBack }) {
                     <MapContainer
                         center={[recommendation.locationLatitude, recommendation.locationLongitude]}
                         zoom={14}
-                        style={{ height: "400px", width: "800px", borderRadius: "8px" }}
+                        style={{ height: "400px", width: "100%", borderRadius: "8px" }}
                     >
                         <TileLayer
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
