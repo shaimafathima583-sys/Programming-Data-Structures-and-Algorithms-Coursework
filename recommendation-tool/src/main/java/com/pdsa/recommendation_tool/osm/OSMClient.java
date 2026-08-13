@@ -1,5 +1,6 @@
 package com.pdsa.recommendation_tool.osm;
-
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -20,22 +21,20 @@ public class OSMClient {
         String query = buildQuery(latitude,longitude,radius);
 
         try {
-            HttpRequest request = HttpRequest.newBuilder().uri
-                    (URI.create(OVERPASS_URL))
-                    .header("Content-Type","application/x-www-form-urlencoded"
-                    ).header("User-Agent","PDSA-Recommendation-Tool"
-                    ).POST(HttpRequest.BodyPublishers.ofString("data=" + query)
-                    ).build();
+            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(OVERPASS_URL))
+                    .header("Content-Type","application/x-www-form-urlencoded")
+                    .header("User-Agent","PDSA-Recommendation-Tool")
+                    .POST(HttpRequest.BodyPublishers.ofString("data=" + URLEncoder
+                    .encode(query, StandardCharsets.UTF_8)))
+                    .build();
 
             HttpResponse<String> response =httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
             if (response.statusCode() == 200) {
-
-                return response.body();
-
+                  return response.body();
             } else {
-
                 System.out.println( "OSM request failed. Status: " + response.statusCode());
+                System.out.println("Response body: " + response.body()); 
                 return null;
             }
 
