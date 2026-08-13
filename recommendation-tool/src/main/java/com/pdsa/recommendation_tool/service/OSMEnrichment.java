@@ -1,5 +1,6 @@
 package com.pdsa.recommendation_tool.service;
 
+import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import com.pdsa.recommendation_tool.osm.OSMCache;
 import com.pdsa.recommendation_tool.osm.OSMClient;
 import com.pdsa.recommendation_tool.osm.OSMParser;
 
+@Service
 public class OSMEnrichment {
 
     private final OSMClient osmClient;

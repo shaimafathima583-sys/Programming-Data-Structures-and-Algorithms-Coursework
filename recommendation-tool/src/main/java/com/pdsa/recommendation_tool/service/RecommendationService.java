@@ -21,10 +21,12 @@ import java.util.Map;
 public class RecommendationService {
 
     private final ExcelDataLoader excelDataLoader;
+    private final OSMEnrichment osmEnrichment;
 
-    public RecommendationService(ExcelDataLoader excelDataLoader) {
-        this.excelDataLoader = excelDataLoader;
-    }
+    public RecommendationService(ExcelDataLoader excelDataLoader, OSMEnrichment osmEnrichment) {
+    this.excelDataLoader = excelDataLoader;
+    this.osmEnrichment = osmEnrichment;
+}
 
     public RecommendationResponse getRecommendation(
             String currentLocationName) {

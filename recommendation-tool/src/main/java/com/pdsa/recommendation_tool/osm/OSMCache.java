@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit;
 
 public class OSMCache {
 
-    private static final String CACHE_DIRECTORY = "src/main/resources/osm-cache";
+    private static final String CACHE_DIRECTORY = "osm-cache";
     private static final int DEFAULT_TTL_DAYS = 30;
 
     public OSMCache() {
