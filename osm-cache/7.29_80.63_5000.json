@@ -1,0 +1,2320 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-13T04:25:07Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 263179681,
+  "lat": 7.2776601,
+  "lon": 80.6157935,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "school",
+    "is_in": "Kandy, Kandy District, Central Province, Sri Lanka",
+    "name": "Kingswood College",
+    "wikidata": "Q6413771",
+    "wikipedia": "en:Kingswood College, Kandy"
+  }
+},
+{
+  "type": "node",
+  "id": 1836302309,
+  "lat": 7.3278804,
+  "lon": 80.6257795,
+  "tags": {
+    "amenity": "school",
+    "name": "Zahira College"
+  }
+},
+{
+  "type": "node",
+  "id": 1837320420,
+  "lat": 7.2870795,
+  "lon": 80.6452633,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Sangaraja Mawatha",
+    "amenity": "school",
+    "name": "Mahamaya Girls College",
+    "wikidata": "Q6733052",
+    "wikipedia": "en:Mahamaya Girls' College, Kandy"
+  }
+},
+{
+  "type": "node",
+  "id": 1837320553,
+  "lat": 7.2890303,
+  "lon": 80.6414490,
+  "tags": {
+    "amenity": "school",
+    "name": "Hillwood College"
+  }
+},
+{
+  "type": "node",
+  "id": 1837389512,
+  "lat": 7.2749107,
+  "lon": 80.6123068,
+  "tags": {
+    "amenity": "bank",
+    "name": "DFCC"
+  }
+},
+{
+  "type": "node",
+  "id": 1837389533,
+  "lat": 7.2735750,
+  "lon": 80.6094905,
+  "tags": {
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Commercial Bank of Ceylon",
+    "brand:wikidata": "Q5152468",
+    "name": "Commercial Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 1837389663,
+  "lat": 7.2750038,
+  "lon": 80.6120466,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Sampath Bank",
+    "brand:wikidata": "Q7410095",
+    "name": "Sampath Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 1837428781,
+  "lat": 7.2937253,
+  "lon": 80.6392887,
+  "tags": {
+    "amenity": "bank",
+    "atm": "yes",
+    "name": "DFCC Vardhana"
+  }
+},
+{
+  "type": "node",
+  "id": 1837478200,
+  "lat": 7.2985738,
+  "lon": 80.6363331,
+  "tags": {
+    "amenity": "school",
+    "name": "Hemamali Balika Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 1837533704,
+  "lat": 7.2825147,
+  "lon": 80.6654494,
+  "tags": {
+    "amenity": "school",
+    "name": "Vidyaloka Maha Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 2087548638,
+  "lat": 7.2664090,
+  "lon": 80.5981261,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-08-30",
+    "healthcare": "hospital",
+    "name": "Peradeniya Teaching Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 2315563271,
+  "lat": 7.2851277,
+  "lon": 80.5894595,
+  "tags": {
+    "amenity": "school",
+    "name": "Gannoruwa Kanishta Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 2343111695,
+  "lat": 7.2986460,
+  "lon": 80.6676499,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Yakghapitiya Divisional Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 2343202887,
+  "lat": 7.3151726,
+  "lon": 80.6694389,
+  "tags": {
+    "amenity": "school",
+    "name": "Tennakoon Wimalananda Maha Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 2828331566,
+  "lat": 7.2665790,
+  "lon": 80.5992620,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-08-31",
+    "name": "Peradeniya Dental Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 2828417381,
+  "lat": 7.2789198,
+  "lon": 80.6189347,
+  "tags": {
+    "check_date": "2023-10-03",
+    "name": "Keells Super",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3209349776,
+  "lat": 7.2904561,
+  "lon": 80.6442954,
+  "tags": {
+    "amenity": "school",
+    "name": "Mahamaya Girls Primary School"
+  }
+},
+{
+  "type": "node",
+  "id": 3222457953,
+  "lat": 7.3235289,
+  "lon": 80.6218467,
+  "tags": {
+    "addr:city": "Katugastota",
+    "addr:street": "Katugasthota-Kurunegala-Puttalam Road",
+    "name": "Hewage Supermarket",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3235664488,
+  "lat": 7.2876064,
+  "lon": 80.6232980,
+  "tags": {
+    "addr:housenumber": "27b",
+    "addr:street": "George De Silva Mawatha",
+    "name": "The Nihals",
+    "name:en": "Nihals Super",
+    "opening_hours": "07:00-22:00",
+    "phone": "0812203410",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3237620171,
+  "lat": 7.2769556,
+  "lon": 80.6142775,
+  "tags": {
+    "amenity": "school",
+    "name": "Alliance Française De Kandy"
+  }
+},
+{
+  "type": "node",
+  "id": 3238071778,
+  "lat": 7.2874726,
+  "lon": 80.6232776,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Dine-More"
+  }
+},
+{
+  "type": "node",
+  "id": 3238078987,
+  "lat": 7.2874380,
+  "lon": 80.6228672,
+  "tags": {
+    "addr:housenumber": "50a",
+    "addr:street": "George De Silva Mawatha",
+    "amenity": "restaurant",
+    "cuisine": "asian;local",
+    "name": "Lyon's Cafe",
+    "phone": "0813836111"
+  }
+},
+{
+  "type": "node",
+  "id": 3242783945,
+  "lat": 7.2807884,
+  "lon": 80.6197918,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "ice_cream",
+    "name": "Baskin Robbins",
+    "opening_hours": "10:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 3242797233,
+  "lat": 7.2763803,
+  "lon": 80.6063289,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "33",
+    "addr:street": "Deveni Rajasinghe Mawatha",
+    "amenity": "restaurant",
+    "name": "Honey Pot Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 3244416447,
+  "lat": 7.2864925,
+  "lon": 80.6193587,
+  "tags": {
+    "name": "Kalutara Stores",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3258708521,
+  "lat": 7.2832365,
+  "lon": 80.6088262,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Dj's Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 3258708526,
+  "lat": 7.2952108,
+  "lon": 80.6267591,
+  "tags": {
+    "alt_name": "Come and eat",
+    "amenity": "restaurant",
+    "name": "The Wok"
+  }
+},
+{
+  "type": "node",
+  "id": 3258709471,
+  "lat": 7.2957612,
+  "lon": 80.6279440,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Happy Family Food Court"
+  }
+},
+{
+  "type": "node",
+  "id": 3258712529,
+  "lat": 7.2866500,
+  "lon": 80.6192065,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Vijayan's Take Away"
+  }
+},
+{
+  "type": "node",
+  "id": 3269996615,
+  "lat": 7.3202469,
+  "lon": 80.6287087,
+  "tags": {
+    "addr:city": "Katugasthota",
+    "addr:street": "Katugastota Road",
+    "amenity": "cafe",
+    "name": "Delight"
+  }
+},
+{
+  "type": "node",
+  "id": 3269996616,
+  "lat": 7.2943160,
+  "lon": 80.6377157,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo Street",
+    "amenity": "restaurant",
+    "name": "Sriram Indian Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 3513600849,
+  "lat": 7.2941167,
+  "lon": 80.6376472,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housename": "79",
+    "addr:street": "Colombo Street",
+    "amenity": "restaurant",
+    "name": "Victory Hotel Bar & Restaurant",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 3629124875,
+  "lat": 7.3056210,
+  "lon": 80.6677136,
+  "tags": {
+    "amenity": "school",
+    "name": "Dumbara Rajakeeya Kanishta Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 3630532461,
+  "lat": 7.2776709,
+  "lon": 80.6326368,
+  "tags": {
+    "amenity": "school",
+    "education": "school"
+  }
+},
+{
+  "type": "node",
+  "id": 3729644967,
+  "lat": 7.3233823,
+  "lon": 80.6214146,
+  "tags": {
+    "addr:city": "Katugastota",
+    "addr:street": "Katugasthota-Kurunegala-Puttalam Road",
+    "name": "Kandy Super Mart",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3729653527,
+  "lat": 7.3100101,
+  "lon": 80.6360781,
+  "tags": {
+    "amenity": "bank",
+    "name": "Commercial Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3729663235,
+  "lat": 7.3124054,
+  "lon": 80.6321242,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Kandy Private Hospital",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3729668231,
+  "lat": 7.3142371,
+  "lon": 80.6316352,
+  "tags": {
+    "check_date": "2024-08-20",
+    "name": "Cargills Food City",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3729673093,
+  "lat": 7.3201112,
+  "lon": 80.6290600,
+  "tags": {
+    "addr:city": "Mawilmada",
+    "addr:street": "Katugastota Road",
+    "amenity": "restaurant",
+    "name": "Bake House"
+  }
+},
+{
+  "type": "node",
+  "id": 3729682346,
+  "lat": 7.3212052,
+  "lon": 80.6275512,
+  "tags": {
+    "addr:city": "Katugasthota",
+    "addr:street": "Katugasthota Road",
+    "name": "Cargills Food city",
+    "payment:cash": "yes",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3729708962,
+  "lat": 7.3205177,
+  "lon": 80.6293885,
+  "tags": {
+    "addr:city": "Katugasthota",
+    "addr:street": "Katugastota Road",
+    "amenity": "school",
+    "name": "St. Anthony's Girls College"
+  }
+},
+{
+  "type": "node",
+  "id": 3729763648,
+  "lat": 7.3221311,
+  "lon": 80.6061501,
+  "tags": {
+    "amenity": "school",
+    "name": "Senarathgama School"
+  }
+},
+{
+  "type": "node",
+  "id": 3730498245,
+  "lat": 7.3232025,
+  "lon": 80.6223377,
+  "tags": {
+    "addr:city": "Katugastota",
+    "addr:street": "Katugasthota-Kurunegala-Puttalam Road",
+    "amenity": "bank",
+    "name": "Nations Trust Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3738577901,
+  "lat": 7.3217134,
+  "lon": 80.6242732,
+  "tags": {
+    "amenity": "bank",
+    "description": "unknown",
+    "name": "Peoples Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3738577902,
+  "lat": 7.3221841,
+  "lon": 80.6245566,
+  "tags": {
+    "addr:city": "Katugastota",
+    "addr:street": "Katugasthota-Halloluwa-Peradeniya road",
+    "amenity": "bank",
+    "name": "NSB Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3738580267,
+  "lat": 7.3221168,
+  "lon": 80.6230947,
+  "tags": {
+    "amenity": "bank",
+    "name": "Seylan Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3738585825,
+  "lat": 7.3030858,
+  "lon": 80.6351719,
+  "tags": {
+    "amenity": "bank",
+    "name": "NSB Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3844202226,
+  "lat": 7.2743051,
+  "lon": 80.6130308,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:postcode": "20000",
+    "amenity": "cafe",
+    "cuisine": "international",
+    "indoor_seating": "yes",
+    "name": "Royal Mall Coffee Shop",
+    "outdoor_seating": "no",
+    "smoking": "no",
+    "survey:date": "2024-08-22",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3844202227,
+  "lat": 7.2742043,
+  "lon": 80.6131190,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:postcode": "20000",
+    "name": "Royal Mall Supermarket",
+    "shop": "supermarket",
+    "survey:date": "2024-08-22",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3998841962,
+  "lat": 7.2727334,
+  "lon": 80.6032180,
+  "tags": {
+    "addr:city": "Gannoruwa",
+    "addr:street": "Gannoruwa Road",
+    "amenity": "cafe",
+    "name": "Hela Bojun Hala - Gannoruwa",
+    "name:si": "හෙළ බොජන් හල"
+  }
+},
+{
+  "type": "node",
+  "id": 4005843826,
+  "lat": 7.2845919,
+  "lon": 80.6234795,
+  "tags": {
+    "amenity": "school",
+    "name": "Swarnamali Girl's College"
+  }
+},
+{
+  "type": "node",
+  "id": 4016221664,
+  "lat": 7.3227240,
+  "lon": 80.6236717,
+  "tags": {
+    "addr:city": "Katugastota",
+    "addr:street": "Katugasthota-Kurunegala-Puttalam Road",
+    "amenity": "school",
+    "name": "Sri Rahula College",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "node",
+  "id": 4016221665,
+  "lat": 7.3215588,
+  "lon": 80.6244710,
+  "tags": {
+    "addr:city": "Katugasthota",
+    "addr:street": "Katugasthota-Halloluwa-Peradeniya road",
+    "amenity": "bank",
+    "name": "Hatton National Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4019244705,
+  "lat": 7.3120542,
+  "lon": 80.6346004,
+  "tags": {
+    "addr:street": "Katugastota Road",
+    "amenity": "bank",
+    "check_date": "2024-08-20",
+    "name": "People's Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4019244707,
+  "lat": 7.3105538,
+  "lon": 80.6357162,
+  "tags": {
+    "addr:street": "Katugastota Road",
+    "amenity": "bank",
+    "name": "DFCC Vardhana Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4019388610,
+  "lat": 7.2936306,
+  "lon": 80.6387552,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "86",
+    "addr:street": "Colombo Street",
+    "amenity": "cafe",
+    "name": "Natural Coffee"
+  }
+},
+{
+  "type": "node",
+  "id": 4019465031,
+  "lat": 7.2871629,
+  "lon": 80.6270715,
+  "tags": {
+    "addr:city": "kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "school",
+    "name": "Viharamahadevi Balika Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 4025970933,
+  "lat": 7.2611138,
+  "lon": 80.6172726,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Heerassagala Road",
+    "amenity": "school",
+    "name": "Bowalawatta Sithumina Vidyalaya"
+  }
+},
+{
+  "type": "node",
+  "id": 4034346051,
+  "lat": 7.2644899,
+  "lon": 80.5986690,
+  "tags": {
+    "amenity": "cafe",
+    "check_date": "2024-08-31",
+    "name": "Canteen"
+  }
+},
+{
+  "type": "node",
+  "id": 4035870284,
+  "lat": 7.2901646,
+  "lon": 80.6401524,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "12",
+    "addr:street": "Sangaraja Mawatha",
+    "amenity": "restaurant",
+    "name": "Lake Classical Guesthouse",
+    "phone": "+94812232315",
+    "tourism": "guest_house",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4036057935,
+  "lat": 7.2841386,
+  "lon": 80.6239378,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "cafe",
+    "name": "Frutah"
+  }
+},
+{
+  "type": "node",
+  "id": 4036057939,
+  "lat": 7.2830777,
+  "lon": 80.6229067,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "restaurant",
+    "name": "Five Five Nine Restaurent"
+  }
+},
+{
+  "type": "node",
+  "id": 4039790775,
+  "lat": 7.3250372,
+  "lon": 80.6598495,
+  "tags": {
+    "addr:city": "Polgolla",
+    "amenity": "school",
+    "name": "Central College"
+  }
+},
+{
+  "type": "node",
+  "id": 4039790801,
+  "lat": 7.3248778,
+  "lon": 80.6483327,
+  "tags": {
+    "addr:city": "Polgolla",
+    "addr:street": "Katutasgota-Madawala-Bambarella Road",
+    "amenity": "bank",
+    "name": "Peoples Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4039822562,
+  "lat": 7.3217342,
+  "lon": 80.6480054,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Lewella-Polgolla Road",
+    "amenity": "school",
+    "name": "Sussex International School"
+  }
+},
+{
+  "type": "node",
+  "id": 4039822563,
+  "lat": 7.3230408,
+  "lon": 80.6421872,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Mawilmada Road.",
+    "amenity": "school",
+    "name": "Colombo International School"
+  }
+},
+{
+  "type": "node",
+  "id": 4089554831,
+  "lat": 7.2753812,
+  "lon": 80.6127321,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Seylan Bank",
+    "brand:wikidata": "Q3532083",
+    "name": "Seylan Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4089586376,
+  "lat": 7.2778439,
+  "lon": 80.6164976,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "cafe",
+    "name": "The Bread Shop"
+  }
+},
+{
+  "type": "node",
+  "id": 4089586377,
+  "lat": 7.2784718,
+  "lon": 80.6168677,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "school",
+    "check_date": "2025-07-12",
+    "name": "Seethadevi Balika - Kandy"
+  }
+},
+{
+  "type": "node",
+  "id": 4089586379,
+  "lat": 7.2788336,
+  "lon": 80.6176751,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "bank",
+    "name": "Pan Asia Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 4089586381,
+  "lat": 7.2790917,
+  "lon": 80.6176912,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "HNB",
+    "brand:wikidata": "Q3532080",
+    "brand:wikipedia": "en:Hatton National Bank",
+    "name": "HNB"
+  }
+},
+{
+  "type": "node",
+  "id": 4089638394,
+  "lat": 7.2793418,
+  "lon": 80.6179808,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "NSB",
+    "brand:wikidata": "Q12500189",
+    "brand:wikipedia": "en:National Savings Bank (Sri Lanka)",
+    "name": "NSB"
+  }
+},
+{
+  "type": "node",
+  "id": 4089673111,
+  "lat": 7.2819521,
+  "lon": 80.6215994,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "hospital",
+    "name": "Suwasewana Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 4089683556,
+  "lat": 7.2828133,
+  "lon": 80.6222768,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo-Kandy Road",
+    "amenity": "school",
+    "name": "Dharamwickrama girls college"
+  }
+},
+{
+  "type": "node",
+  "id": 4156996891,
+  "lat": 7.2880419,
+  "lon": 80.6424538,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "Mango Garden"
+  }
+},
+{
+  "type": "node",
+  "id": 4362468889,
+  "lat": 7.2937909,
+  "lon": 80.6382584,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "D.S. Senanayake Veediya",
+    "amenity": "restaurant",
+    "cuisine": "regional;indian",
+    "diet:vegetarian": "yes",
+    "name": "Balaji Dosai",
+    "website": "https://balajidosai.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4507449989,
+  "lat": 7.2907125,
+  "lon": 80.6309994,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo - Kandy Road",
+    "amenity": "cafe",
+    "cuisine": "ice_cream",
+    "name": "Cool Corner Fried Ice Cream",
+    "website": "http://www.coolcornerfriedicecream.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4525822689,
+  "lat": 7.2808915,
+  "lon": 80.6200033,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 4542512487,
+  "lat": 7.2781122,
+  "lon": 80.6179641,
+  "tags": {
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Sampath Bank",
+    "brand:wikidata": "Q7410095",
+    "brand:wikipedia": "en:Sampath Bank",
+    "check_date": "2024-08-22",
+    "name": "Sampath Bank",
+    "operator": "Sampath Bank PLC"
+  }
+},
+{
+  "type": "node",
+  "id": 4542513912,
+  "lat": 7.2677343,
+  "lon": 80.5990724,
+  "tags": {
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "Bank of Ceylon",
+    "brand:wikidata": "Q2882652",
+    "brand:wikipedia": "en:Bank of Ceylon",
+    "check_date": "2024-08-31",
+    "name": "Bank of Ceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 4699152197,
+  "lat": 7.2680042,
+  "lon": 80.5971579,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 4707684789,
+  "lat": 7.2904004,
+  "lon": 80.6303846,
+  "tags": {
+    "addr:street": "Peradeniye Road",
+    "amenity": "school",
+    "name": "1st class"
+  }
+},
+{
+  "type": "node",
+  "id": 4750431521,
+  "lat": 7.2915892,
+  "lon": 80.6481781,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 4907187822,
+  "lat": 7.2947969,
+  "lon": 80.6357696,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "65",
+    "addr:street": "Yatinuwara Veediya",
+    "amenity": "cafe",
+    "cuisine": "breakfast;regional",
+    "name": "Smiley Fruits",
+    "opening_hours": "Mo-Su 07:00-19:00"
+  }
+},
+{
+  "type": "node",
+  "id": 5153351571,
+  "lat": 7.2987220,
+  "lon": 80.6103214,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "sri_lankan",
+    "name": "Dinisuru Meal House",
+    "outdoor_seating": "no",
+    "start_date": "2017/10/06",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5153363621,
+  "lat": 7.2987350,
+  "lon": 80.6103048,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 5161579823,
+  "lat": 7.3028162,
+  "lon": 80.6357582,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:street": "Lady Gordern's Road",
+    "amenity": "restaurant",
+    "email": "mirshadtck2000@gmail.com",
+    "internet_access": "wlan",
+    "name:en": "Qkeez",
+    "opening_hours": "24/7",
+    "phone": "+94774899786"
+  }
+},
+{
+  "type": "node",
+  "id": 5173638392,
+  "lat": 7.2910283,
+  "lon": 80.6450197,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Kandy Nursing Home"
+  }
+},
+{
+  "type": "node",
+  "id": 5188302226,
+  "lat": 7.2855675,
+  "lon": 80.6259798,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "391",
+    "addr:postcode": "20000",
+    "addr:street": "Colombo - Kandy Rd,",
+    "amenity": "restaurant",
+    "name": "Grand Cafe",
+    "opening_hours": "8:30 AM-10 PM",
+    "phone": "0812222126"
+  }
+},
+{
+  "type": "node",
+  "id": 5228639054,
+  "lat": 7.2858102,
+  "lon": 80.6286982,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 5234901826,
+  "lat": 7.2918991,
+  "lon": 80.6367174,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Sri Vikrama Rajasinha Mawatha",
+    "amenity": "restaurant",
+    "name": "Hela Bojun Hala"
+  }
+},
+{
+  "type": "node",
+  "id": 5289859421,
+  "lat": 7.2803248,
+  "lon": 80.6546383,
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "name": "Beraverts Ryl College"
+  }
+},
+{
+  "type": "node",
+  "id": 5329664321,
+  "lat": 7.2798789,
+  "lon": 80.6190254,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "burger;chinese;diner;fish;indian;coffee_shop;local;pasta",
+    "name:en": "OpenRice"
+  }
+},
+{
+  "type": "node",
+  "id": 5412519124,
+  "lat": 7.2878563,
+  "lon": 80.6289139,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "S.W.R.D. Bandaranayaka Mawatha",
+    "amenity": "cafe",
+    "name": "DW Garage Café"
+  }
+},
+{
+  "type": "node",
+  "id": 5422881322,
+  "lat": 7.2921405,
+  "lon": 80.6369893,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Sri Vikrama Rajasinha Mawatha",
+    "amenity": "restaurant",
+    "name": "Worldspice"
+  }
+},
+{
+  "type": "node",
+  "id": 5549361824,
+  "lat": 7.2883564,
+  "lon": 80.6289390,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo - Kandy Road",
+    "amenity": "restaurant",
+    "cuisine": "curry;indian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Vegetarian Restaurant",
+    "opening_hours": "Mo-Su 06:30-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 5561316932,
+  "lat": 7.2898636,
+  "lon": 80.6215308,
+  "tags": {
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 5573266221,
+  "lat": 7.2905510,
+  "lon": 80.6366800,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Rajapihilla Mawatha",
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/cafebananachill",
+    "cuisine": "international;breakfast;coffee_shop;local",
+    "diet:vegan": "yes",
+    "name": "Café Banana Chill",
+    "phone": "+94 775882041"
+  }
+},
+{
+  "type": "node",
+  "id": 5898821585,
+  "lat": 7.2945421,
+  "lon": 80.6362296,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo Street",
+    "amenity": "restaurant",
+    "name": "Ganga"
+  }
+},
+{
+  "type": "node",
+  "id": 5898825385,
+  "lat": 7.2947522,
+  "lon": 80.6360047,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Yatinuwara Veediya",
+    "amenity": "restaurant",
+    "name": "Shri Bhawan Dosa"
+  }
+},
+{
+  "type": "node",
+  "id": 5905770987,
+  "lat": 7.2943315,
+  "lon": 80.6378170,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "64",
+    "addr:street": "Colombo Street",
+    "amenity": "restaurant",
+    "name:en": "Green Café",
+    "phone": "+94812234884"
+  }
+},
+{
+  "type": "node",
+  "id": 5978045689,
+  "lat": 7.2688871,
+  "lon": 80.6641370,
+  "tags": {
+    "addr:city": "Ampitiya",
+    "addr:postcode": "20000",
+    "addr:street": "Kandy-Ampitiya-Thalatuoya Road",
+    "amenity": "school",
+    "name": "Siddhartha Maha Vidyalaya",
+    "phone": "+94812242066"
+  }
+},
+{
+  "type": "node",
+  "id": 6014566887,
+  "lat": 7.3007682,
+  "lon": 80.6363827,
+  "tags": {
+    "addr:housenumber": "291/A",
+    "addr:street": "D.S. Senanayake Veediya",
+    "amenity": "restaurant",
+    "operator": "R. W. Madugalle"
+  }
+},
+{
+  "type": "node",
+  "id": 6049077087,
+  "lat": 7.2884713,
+  "lon": 80.6288775,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo - Kandy Road",
+    "amenity": "restaurant",
+    "name": "The Urban Grub"
+  }
+},
+{
+  "type": "node",
+  "id": 6151554285,
+  "lat": 7.2826403,
+  "lon": 80.6218178,
+  "tags": {
+    "addr:housenumber": "619",
+    "addr:street": "peradeniya road",
+    "amenity": "cafe",
+    "name:en": "Cafe M"
+  }
+},
+{
+  "type": "node",
+  "id": 6151632385,
+  "lat": 7.2736232,
+  "lon": 80.6096353,
+  "tags": {
+    "addr:housenumber": "921",
+    "addr:street": "Peradeniya Road",
+    "amenity": "restaurant",
+    "name:en": "Sala Thai Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6153274885,
+  "lat": 7.2964071,
+  "lon": 80.6377728,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Kandyan King Sea Food Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6153672585,
+  "lat": 7.2874280,
+  "lon": 80.6424375,
+  "tags": {
+    "addr:street": "Saranankara Road",
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "name": "Ivy Banks restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6166025885,
+  "lat": 7.2887722,
+  "lon": 80.6447235,
+  "tags": {
+    "addr:city": "Kandy",
+    "amenity": "cafe",
+    "name": "Citruscafe Inn"
+  }
+},
+{
+  "type": "node",
+  "id": 6212891392,
+  "lat": 7.2924370,
+  "lon": 80.6485958,
+  "tags": {
+    "amenity": "cafe",
+    "internet_access": "wlan",
+    "name": "Yolo"
+  }
+},
+{
+  "type": "node",
+  "id": 6296619889,
+  "lat": 7.2877108,
+  "lon": 80.6239289,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Balaji dosai"
+  }
+},
+{
+  "type": "node",
+  "id": 6322636085,
+  "lat": 7.2994857,
+  "lon": 80.6292730,
+  "tags": {
+    "amenity": "restaurant",
+    "name:en": "Red Chillies - take away food"
+  }
+},
+{
+  "type": "node",
+  "id": 6339950885,
+  "lat": 7.2680859,
+  "lon": 80.5976957,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-08-22",
+    "name": "Peradenya Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6366515085,
+  "lat": 7.2923077,
+  "lon": 80.6372568,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Food court - Chinese, Indian, Thai & Italian food"
+  }
+},
+{
+  "type": "node",
+  "id": 6390396197,
+  "lat": 7.2739388,
+  "lon": 80.6131873,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-08-22",
+    "name": "Royal Mall Food Court"
+  }
+},
+{
+  "type": "node",
+  "id": 6390403928,
+  "lat": 7.2740619,
+  "lon": 80.6133861,
+  "tags": {
+    "amenity": "bank",
+    "check_date": "2024-08-22",
+    "name": "Nations Trust Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 6397879148,
+  "lat": 7.2751812,
+  "lon": 80.6166044,
+  "tags": {
+    "amenity": "school",
+    "name": "Lumbini Royal College"
+  }
+},
+{
+  "type": "node",
+  "id": 6611417519,
+  "lat": 7.2925421,
+  "lon": 80.6458685,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Kassapa's Dream Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6611417521,
+  "lat": 7.2911360,
+  "lon": 80.6448600,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Kandy Nursing Home"
+  }
+},
+{
+  "type": "node",
+  "id": 6611417522,
+  "lat": 7.2908846,
+  "lon": 80.6450846,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "History Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6649834386,
+  "lat": 7.2911444,
+  "lon": 80.6473482,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Orient Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 6731567986,
+  "lat": 7.2939491,
+  "lon": 80.6373152,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Route 66"
+  }
+},
+{
+  "type": "node",
+  "id": 7039052085,
+  "lat": 7.2892777,
+  "lon": 80.6299041,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Colombo - Kandy Road",
+    "amenity": "restaurant",
+    "name:en": "Madhavan's"
+  }
+},
+{
+  "type": "node",
+  "id": 7192739586,
+  "lat": 7.2905790,
+  "lon": 80.6321919,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Hela Bojun"
+  }
+},
+{
+  "type": "node",
+  "id": 8003562954,
+  "lat": 7.3101868,
+  "lon": 80.6426332,
+  "tags": {
+    "name": "Nilantha Stores",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 8413541931,
+  "lat": 7.2796798,
+  "lon": 80.6747860,
+  "tags": {
+    "name": "Lanka Sathosa",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 8413572855,
+  "lat": 7.2813578,
+  "lon": 80.6703870,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Seven Eleven Restaurent - Akku",
+    "phone": "+94770773549"
+  }
+},
+{
+  "type": "node",
+  "id": 8418237940,
+  "lat": 7.2858279,
+  "lon": 80.6614410,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Cafe Paprica",
+    "phone": "+94774978512"
+  }
+},
+{
+  "type": "node",
+  "id": 8585213233,
+  "lat": 7.2805713,
+  "lon": 80.6698341,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Kandy - Mahiyanganaya Road",
+    "amenity": "restaurant",
+    "name": "Airavata"
+  }
+},
+{
+  "type": "node",
+  "id": 8592857060,
+  "lat": 7.2758269,
+  "lon": 80.6568364,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Kandy - Ampitiya - Thalatuoya Road",
+    "amenity": "restaurant",
+    "name": "Golden Crown"
+  }
+},
+{
+  "type": "node",
+  "id": 8592872415,
+  "lat": 7.2834128,
+  "lon": 80.6519655,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Kandy - Ampitiya - Thalatuoya Road",
+    "amenity": "restaurant",
+    "name": "Olivia"
+  }
+},
+{
+  "type": "node",
+  "id": 8595831008,
+  "lat": 7.2734056,
+  "lon": 80.5918036,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Gannoruwa Road",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Suwasevana hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 8595856312,
+  "lat": 7.2638585,
+  "lon": 80.6038946,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Udaperadeniya Rd",
+    "amenity": "restaurant",
+    "name": "Misty hills"
+  }
+},
+{
+  "type": "node",
+  "id": 8595863701,
+  "lat": 7.2729994,
+  "lon": 80.6248909,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:street": "Kaluwala Road",
+    "amenity": "restaurant",
+    "name": "Skyloft"
+  }
+},
+{
+  "type": "node",
+  "id": 8595882889,
+  "lat": 7.2762919,
+  "lon": 80.5929752,
+  "tags": {
+    "addr:city": "peradeniya",
+    "addr:street": "River Drive",
+    "amenity": "restaurant",
+    "name": "Wild life circuit bangalow"
+  }
+},
+{
+  "type": "node",
+  "id": 8601139758,
+  "lat": 7.2799342,
+  "lon": 80.6765317,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 8602557071,
+  "lat": 7.2936519,
+  "lon": 80.6495575,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 8678452995,
+  "lat": 7.2799717,
+  "lon": 80.6758719,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "brand:wikipedia": "en:Pizza Hut",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 9515428024,
+  "lat": 7.2799422,
+  "lon": 80.6762578,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "asian;thai",
+    "name": "WOK Fusion",
+    "opening_hours": "Mo-Su 11:00-22:00",
+    "phone": "+94778744215"
+  }
+},
+{
+  "type": "node",
+  "id": 10575595485,
+  "lat": 7.2818396,
+  "lon": 80.6694821,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Earl Regency"
+  }
+},
+{
+  "type": "node",
+  "id": 10666100805,
+  "lat": 7.2934058,
+  "lon": 80.6374251,
+  "tags": {
+    "amenity": "cafe",
+    "name:en": "Café Secret Alley"
+  }
+},
+{
+  "type": "node",
+  "id": 10686142675,
+  "lat": 7.2925492,
+  "lon": 80.6358786,
+  "tags": {
+    "amenity": "restaurant",
+    "diet:vegetarian": "yes",
+    "name": "Soul Food"
+  }
+},
+{
+  "type": "node",
+  "id": 10687806692,
+  "lat": 7.2951744,
+  "lon": 80.6381156,
+  "tags": {
+    "amenity": "cafe",
+    "diet:vegetarian": "yes",
+    "name": "Buono"
+  }
+},
+{
+  "type": "node",
+  "id": 10688790610,
+  "lat": 7.2995080,
+  "lon": 80.6368751,
+  "tags": {
+    "amenity": "cafe",
+    "level": "3",
+    "name": "Cafe the Vibe"
+  }
+},
+{
+  "type": "node",
+  "id": 10862455120,
+  "lat": 7.2963405,
+  "lon": 80.6368229,
+  "tags": {
+    "amenity": "cafe",
+    "delivery": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "level": "2",
+    "name": "The Soya Center",
+    "opening_hours": "Mo-Su 08:30-18:00",
+    "outdoor_seating": "yes",
+    "smoking": "no",
+    "takeaway": "yes",
+    "toilets": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10864044160,
+  "lat": 7.2943949,
+  "lon": 80.6357543,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "regional",
+    "name": "Put Chutney"
+  }
+},
+{
+  "type": "node",
+  "id": 10864052734,
+  "lat": 7.2959966,
+  "lon": 80.6376273,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "name": "Cafe Koi"
+  }
+},
+{
+  "type": "node",
+  "id": 11019897607,
+  "lat": 7.2933157,
+  "lon": 80.6351831,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Oak Ray Bakers"
+  }
+},
+{
+  "type": "node",
+  "id": 11021340205,
+  "lat": 7.2929438,
+  "lon": 80.6364607,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Devons Kandy"
+  }
+},
+{
+  "type": "node",
+  "id": 11280541072,
+  "lat": 7.3039863,
+  "lon": 80.6500104,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 11425549206,
+  "lat": 7.2943300,
+  "lon": 80.6298674,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Marinate"
+  }
+},
+{
+  "type": "node",
+  "id": 11425560741,
+  "lat": 7.2939685,
+  "lon": 80.6380503,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "La Mulberry"
+  }
+},
+{
+  "type": "node",
+  "id": 11462237519,
+  "lat": 7.2947672,
+  "lon": 80.6392603,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Oak Ray Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 11469395713,
+  "lat": 7.2883838,
+  "lon": 80.6394475,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Senani Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 11695592390,
+  "lat": 7.2830578,
+  "lon": 80.6229733,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 11710591769,
+  "lat": 7.2873407,
+  "lon": 80.6465179,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "hideout lounge"
+  }
+},
+{
+  "type": "node",
+  "id": 11721522330,
+  "lat": 7.2818830,
+  "lon": 80.6216691,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 11754464123,
+  "lat": 7.2817247,
+  "lon": 80.6206084,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 11966367701,
+  "lat": 7.2904145,
+  "lon": 80.6059482,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Chillah"
+  }
+},
+{
+  "type": "node",
+  "id": 12130873942,
+  "lat": 7.2728567,
+  "lon": 80.6071591,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Aloy Restaurant",
+    "survey:date": "2024-08-23"
+  }
+},
+{
+  "type": "node",
+  "id": 12399500216,
+  "lat": 7.2844505,
+  "lon": 80.6233383,
+  "tags": {
+    "amenity": "school",
+    "name": "Siddi Lebbe College"
+  }
+},
+{
+  "type": "node",
+  "id": 12441462801,
+  "lat": 7.2963926,
+  "lon": 80.6377334,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Cafe Nuwara by Fabceylon"
+  }
+},
+{
+  "type": "node",
+  "id": 12469062798,
+  "lat": 7.2935250,
+  "lon": 80.6482810,
+  "tags": {
+    "addr:city": "Kandy",
+    "addr:housenumber": "129",
+    "addr:postcode": "20000",
+    "addr:street": "Anagarika Dharmapala Mawatha",
+    "amenity": "cafe",
+    "contact:phone": "+94775882041",
+    "cuisine": "regional",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "internet_access": "wlan",
+    "name": "Cafe Banana Chill",
+    "outdoor_seating": "yes",
+    "website": "https://www.facebook.com/cafebananachill/",
+    "website:1": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fcafebananachill&h=AT1bidjWrhvJevUD5eYQAFMop_gigAA-Qy4j77WDOUbb5RTv2_iM9T_wdDpI_ji1n7NbTENvUzfaYthEp4kjUw9CvkGRjpm37-12iiR_oondYEyBnf5xTTk4j6KTT3aMnCjo4LmElHkw9H4YTh5DE-dumSw5sF-lJrX75uJg0A"
+  }
+},
+{
+  "type": "node",
+  "id": 12538957925,
+  "lat": 7.2908792,
+  "lon": 80.6368562,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 12538959174,
+  "lat": 7.2857237,
+  "lon": 80.6261285,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "My Momo"
+  }
+},
+{
+  "type": "node",
+  "id": 12565747802,
+  "lat": 7.2681030,
+  "lon": 80.5965985,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 12599830101,
+  "lat": 7.2971940,
+  "lon": 80.6365996,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Siri Ramya Hotel & Caterers"
+  }
+},
+{
+  "type": "node",
+  "id": 12604338101,
+  "lat": 7.2929585,
+  "lon": 80.6329455,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "south_indian",
+    "diet:vegetarian": "yes",
+    "name": "Dosai Kingdom"
+  }
+},
+{
+  "type": "node",
+  "id": 12628429320,
+  "lat": 7.2800182,
+  "lon": 80.6210316,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Udaya hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 12691109990,
+  "lat": 7.2881700,
+  "lon": 80.6424527,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Mango Garden"
+  }
+},
+{
+  "type": "node",
+  "id": 12691117869,
+  "lat": 7.2878060,
+  "lon": 80.6424907,
+  "tags": {
+    "addr:housenumber": "56",
+    "addr:street": "Saranankara Road",
+    "amenity": "restaurant",
+    "cuisine": "pizza",
+    "name": "Pizzeria Vito",
+    "phone": "0774549000"
+  }
+},
+{
+  "type": "node",
+  "id": 12800035602,
+  "lat": 7.2935928,
+  "lon": 80.6353672,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Organica Lounge Kandy (Vegan)"
+  }
+},
+{
+  "type": "node",
+  "id": 13031778691,
+  "lat": 7.2857296,
+  "lon": 80.6284602,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "asian",
+    "level": "0",
+    "name": "Lemon Tree",
+    "outdoor_seating": "yes",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 13153063420,
+  "lat": 7.2884825,
+  "lon": 80.6395765,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Oak Ray"
+  }
+},
+{
+  "type": "node",
+  "id": 13289098301,
+  "lat": 7.2916011,
+  "lon": 80.6429369,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Cafe Lago",
+    "opening_hours": "Mo-Su 09:00-19:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943744,
+  "lat": 7.2936150,
+  "lon": 80.6385517,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943745,
+  "lat": 7.2932918,
+  "lon": 80.6353599,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Kandy Muslim Hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943746,
+  "lat": 7.2932412,
+  "lon": 80.6355517,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Sinhala Hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943747,
+  "lat": 7.2941870,
+  "lon": 80.6366983,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Cafe divine"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943748,
+  "lat": 7.2942030,
+  "lon": 80.6364864,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Juice spot"
+  }
+},
+{
+  "type": "node",
+  "id": 13516943749,
+  "lat": 7.2943201,
+  "lon": 80.6361592,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Seed Shop"
+  }
+},
+{
+  "type": "node",
+  "id": 13540678380,
+  "lat": 7.2972819,
+  "lon": 80.6374505,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "June Bistro"
+  }
+},
+{
+  "type": "node",
+  "id": 13551262041,
+  "lat": 7.2947899,
+  "lon": 80.6370167,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Café 1886"
+  }
+},
+{
+  "type": "node",
+  "id": 13551262044,
+  "lat": 7.2938845,
+  "lon": 80.6382374,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "name": "Hotel Saumiya"
+  }
+},
+{
+  "type": "node",
+  "id": 13551262045,
+  "lat": 7.2939459,
+  "lon": 80.6384468,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 13551262046,
+  "lat": 7.2938852,
+  "lon": 80.6384643,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 13605724257,
+  "lat": 7.2932012,
+  "lon": 80.6365823,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Siri Ramya Restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 13760628335,
+  "lat": 7.2915158,
+  "lon": 80.6430695,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Roots'n'beans plant based cafe (vegan & vegetarian restaurant)",
+    "opening_hours": "Mo-Su 07:00-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13808011501,
+  "lat": 7.2941482,
+  "lon": 80.6390369,
+  "tags": {
+    "addr:street": "Srimath Bennet Soysa Veediya (Colombo Street)",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "name": "Department of Coffee"
+  }
+},
+{
+  "type": "node",
+  "id": 13810205101,
+  "lat": 7.2961192,
+  "lon": 80.6374810,
+  "tags": {
+    "addr:street": "D. S. Senanayake Veediya (Trincomalee Street)",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "name": "Buono",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13812749001,
+  "lat": 7.2916527,
+  "lon": 80.6313824,
+  "tags": {
+    "addr:street": "Sirimavo Bandaranaike Mawatha (Peradeniya Road)",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "name": "Garage Cafe",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13818129001,
+  "lat": 7.2964932,
+  "lon": 80.6365553,
+  "tags": {
+    "addr:street": "E. L. Senanayake Veediya (Kotugodella Veediya)",
+    "amenity": "restaurant",
+    "cuisine": "indian",
+    "internet_access": "wlan",
+    "name": "Indian Summer",
+    "outdoor_seating": "no",
+    "self_service": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13840039701,
+  "lat": 7.2950694,
+  "lon": 80.6359898,
+  "tags": {
+    "addr:street": "Yatinuwara Veediya",
+    "amenity": "restaurant",
+    "internet_access": "wlan",
+    "name": "The Dope House",
+    "outdoor_seating": "no",
+    "self_service": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13843998201,
+  "lat": 7.3094086,
+  "lon": 80.6406859,
+  "tags": {
+    "addr:street": "Pitiya Devala Road",
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "internet_access": "wlan",
+    "name": "Helanta Coffee Roasters",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598235,
+  "lat": 7.2811146,
+  "lon": 80.6634081,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598236,
+  "lat": 7.2788390,
+  "lon": 80.6705454,
+  "tags": {
+    "amenity": "restaurant"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598237,
+  "lat": 7.2800060,
+  "lon": 80.6625650,
+  "tags": {
+    "amenity": "bank"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598241,
+  "lat": 7.2810757,
+  "lon": 80.6711533,
+  "tags": {
+    "amenity": "cafe"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598242,
+  "lat": 7.2864001,
+  "lon": 80.6707893,
+  "tags": {
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 14065598247,
+  "lat": 7.2881398,
+  "lon": 80.6637738,
+  "tags": {
+    "shop": "supermarket"
+  }
+}
+
+  ]
+}
