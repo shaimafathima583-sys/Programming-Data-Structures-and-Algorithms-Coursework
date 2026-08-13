@@ -118,4 +118,23 @@ public class OpportunityCalculator {
         provinces.clear();
         provinces.addAll(rankedProvinces);
     }
+
+    //c1dlt
+    //testing this
+    public static double calculateScore(Location location, long osmCompetitorCount, long osmFacilityCount) {
+
+    double populationScore = (location.getPopulation() / 150000.0) * 10;
+    double purchasingScore = location.getPurchasingPower();
+
+    double facilitiesScore = (location.getFacilities() + Math.min(osmFacilityCount, 10)) / 2.0;
+    double competitionScore = (location.getCompetition() + Math.min(osmCompetitorCount, 10)) / 2.0;
+
+    double score =
+            (populationScore * 0.30)
+            + (purchasingScore * 0.35)
+            + (facilitiesScore * 0.25)
+            - (competitionScore * 0.10);
+
+    return Math.round(score * 100.0) / 100.0;
+}
 }

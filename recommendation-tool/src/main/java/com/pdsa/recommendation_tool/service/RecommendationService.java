@@ -461,20 +461,31 @@ public class RecommendationService {
             
             // CALCULATE AVERAGE OPPORTUNITY
            
-
+//c2dlt
             double averageScore = 0;
 
-            for (Location location :
-                    districtData) {
+for (Location location : districtData) {
 
-                averageScore +=
-                        OpportunityCalculator
-                                .calculateScore(location);
-            }
+    List<com.pdsa.recommendation_tool.osm.OSMParser.OSMPlace> places =
+            osmEnrichment.getPlaces(location);
 
-            averageScore =
-                    averageScore /
-                            districtData.size();
+    long competitorCount = places.stream()
+            .filter(p -> p.getType().equalsIgnoreCase("shop")
+                      || p.getType().equalsIgnoreCase("restaurant")
+                      || p.getType().equalsIgnoreCase("cafe"))
+            .count();
+
+    long facilityCount = places.stream()
+            .filter(p -> p.getType().equalsIgnoreCase("school")
+                      || p.getType().equalsIgnoreCase("hospital")
+                      || p.getType().equalsIgnoreCase("bank"))
+            .count();
+
+    averageScore += OpportunityCalculator.calculateScore(location, competitorCount, facilityCount);
+}
+
+averageScore = averageScore / districtData.size();
+
 
 
           
