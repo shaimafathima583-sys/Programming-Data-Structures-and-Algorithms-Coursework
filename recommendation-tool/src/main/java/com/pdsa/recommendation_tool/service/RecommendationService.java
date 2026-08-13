@@ -482,6 +482,12 @@ for (Location location : districtData) {
             .count();
 
     averageScore += OpportunityCalculator.calculateScore(location, competitorCount, facilityCount);
+
+    try {
+        Thread.sleep(1200);
+    } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+    }
 }
 
 averageScore = averageScore / districtData.size();
