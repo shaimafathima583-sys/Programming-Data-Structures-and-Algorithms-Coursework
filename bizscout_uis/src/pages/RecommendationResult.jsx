@@ -202,14 +202,14 @@ function RecommendationResult({ recommendation, onBack }) {
                 </div>
 
                 <div className="analysis-details">
-
+<br/>
                     <div>
-                        <span>Current Province</span>
+                        <span>Current Province : </span>
                         <strong>{currentProvince}</strong>
                     </div>
-
+<br />
                     <div>
-                        <span>Distance from Current Location</span>
+                        <span>Distance from Current Location : </span>
                         <strong>{provinceDistance.toFixed(2)} km</strong>
                     </div>
 
